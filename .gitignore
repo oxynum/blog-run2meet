@@ -5,3 +5,5 @@ wp-includes/*
 wp-content/upgrade/*
 wp-content/uploads/*
 xmlrpc.php
+
+wp-config-sample.php
