@@ -838,11 +838,9 @@ button.submit {
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
-  clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
 }
 
-.sticky_module .slick-track .slick-slide .slick-square h2.slick-title{
+.sticky_module .slick-track .slick-slide .slick-square .slick-table h2.slick-title{
   display: table-cell;
   color: white;
   font-family: 'DINCond-Medium';
@@ -853,6 +851,49 @@ button.submit {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+}
+
+.sticky_module .slick-track .slick-slide .slick-square .slick-table a{
+  display: table-cell;
+  color: white;
+  font-family: 'DINCond-Medium';
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.0625em;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.sticky_module .slick-track .slick-slide .slick-square .slick-table a:before{
+  content: '';
+  position: absolute;
+  margin-top: 20px;
+  left: 35px;
+  width: 1px;
+  height: 10px;
+  background: white;
+}
+
+.sticky_module .slick-track .slick-slide .slick-square .slick-table a:after{
+  content: '';
+  position: absolute;
+  margin-top: 20px;
+  right: 35px;
+  width: 1px;
+  height: 10px;
+  background: white;
+}
+
+.sticky_module .slick-track .slick-slide .slick-square .slick-table span.underline{
+  display: table-cell;
+  position: absolute;
+  bottom: 26px;
+  left: 35px;
+  right: 35px;
+  width: 350px;
+  border-bottom: 1px solid #fff;
 }
 
 

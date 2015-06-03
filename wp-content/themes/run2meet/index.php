@@ -34,7 +34,12 @@ get_header(); ?>
 			                   <h2 class="slick-title">';
                                 the_title();
                                 echo '</h2>
-                                    <a href="'.get_permalink().'">Lire la suite</a>
+                                    </div>
+                                    <div class="slick-table">
+                                      <a href="'.get_permalink().'">Lire la suite</a>
+                                    </div>
+                                    <div class="slick-table">
+                                      <span class="underline"></span>
                                     </div>
                                   </div>
                                 </div>
