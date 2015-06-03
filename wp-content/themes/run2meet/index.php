@@ -17,6 +17,24 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<div class="sticky_module">
+			<?php
+			query_posts('showposts=5');
+			if (have_posts()) {
+			  while (have_posts()) : the_post();
+			    if ( is_sticky() ) :
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . ');">';
+			       the_title();
+			       the_excerpt();
+						echo '</div>';
+			    endif;
+			  endwhile;
+			}
+			wp_reset_query();
+			?>
+		</div>
+
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -27,7 +45,9 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
+
 			<?php
+			$query = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
 			// Start the loop.
 			while ( have_posts() ) : the_post();
 

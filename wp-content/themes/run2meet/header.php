@@ -23,28 +23,32 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
-
-	<div id="sidebar" class="sidebar">
 		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
+			<div class="site-branding clearfix">
 				<?php
 					if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php else : ?>
 						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php endif;
-
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif;
 				?>
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
+				<!-- <div class="social-icon">
+				 <ul>
+					<li><a href="" class="fb">Facebook</a></li>
+					<li><a href="" class="ig">Instagram</a></li>
+					<li><a href="" class="tw">Twitter</a></li>
+					<li><a href="" class="gp">Google +</a></li>
+				</ul>
+				</div> -->
+				<div class="connexion">
+					<button class="submit">Aller sur <strong>Run2meet.fr</strong></button>
+				</div>
 			</div><!-- .site-branding -->
-		</header><!-- .site-header -->
-
-		<?php get_sidebar(); ?>
-	</div><!-- .sidebar -->
-
+			<nav class="nav-main">
+				<ul>
+					<?php wp_list_categories('title_li='); ?>
+				</ul>
+			</nav>
+	</header><!-- .site-header -->
 	<div id="content" class="site-content">
