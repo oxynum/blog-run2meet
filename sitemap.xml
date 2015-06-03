@@ -1,849 +1,863 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://46.101.18.108/wp-content/plugins/sitemap-generator-for-webmasters/sitemap.xsl"?><!-- generator="wordpress/4.2.2" -->
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://blog.run2meet.co:8888/wp-content/plugins/sitemap-generator-for-webmasters/sitemap.xsl"?><!-- generator="wordpress/4.2.2" -->
 <!-- sitemap-generator-url="http://www.iwebslog.com" sitemap-generator-version="1.5" -->
-<!-- generated-on="27 May 2015 12 h 27 min" -->
+<!-- generated-on="3 June 2015 12 h 59 min" -->
 <!-- Debug: Total comment count: 22 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>http://46.101.18.108/</loc>
-		<lastmod>2015-05-27T12:13:47+00:00</lastmod>
+		<loc>http://blog.run2meet.co:8888/</loc>
+		<lastmod>2015-06-03T12:58:50+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
-<!-- Debug: Priority report of postID 1395: Comments: 0 of 22 = 0 points -->
+<!-- Debug: Priority report of postID 2166: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/04/15/pourquoi-lhumour-plait-aux-femmes-meme-sur-un-site-de-rencontre/</loc>
-		<lastmod>2015-05-27T12:13:47+00:00</lastmod>
+		<loc>http://blog.run2meet.co:8888/2015/05/28/sexfriend-bonne-ou-mauvaise-idee/</loc>
+		<lastmod>2015-06-03T12:58:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1409: Comments: 0 of 22 = 0 points -->
+<!-- Debug: Priority report of postID 2257: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/04/16/arme-fatale/</loc>
-		<lastmod>2015-05-27T12:13:05+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1426: Comments: 1 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/04/21/lalimentation-la-clef-du-succes/</loc>
-		<lastmod>2015-05-27T12:11:45+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1467: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/04/24/le-sport-createur-de-nouvelles-relations/</loc>
-		<lastmod>2015-05-27T12:11:27+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1468: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/04/27/courir-pour-se-sentir-mieux/</loc>
-		<lastmod>2015-05-27T12:11:16+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1498: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/04/28/prendre-confiance-en-soi-pour-reussir-un-premier-rendez-vous-amoureux/</loc>
-		<lastmod>2015-05-27T12:11:04+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1492: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/05/05/les-proteines-vos-amis-pour-la-vie/</loc>
-		<lastmod>2015-05-27T12:10:41+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1615: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/05/06/comment-tuer-cette-bonne-vieille-cellulite/</loc>
-		<lastmod>2015-05-27T12:10:35+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1640: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/05/07/comment-rester-motive/</loc>
-		<lastmod>2015-05-27T12:10:26+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1649: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/05/11/le-twerk-un-sport-ou-pas/</loc>
-		<lastmod>2015-05-27T12:10:11+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1593: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/05/13/la-tenue-de-sport-dune-girly-sportive/</loc>
-		<lastmod>2015-05-27T12:09:43+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 2212: Comments: 0 of 22 = 0 points -->
-	<url>
-		<loc>http://46.101.18.108/2015/05/21/5-bonnes-raisons-de-sinscrire-sur-un-site-de-rencontre/</loc>
-		<lastmod>2015-05-27T12:05:37+00:00</lastmod>
+		<loc>http://blog.run2meet.co:8888/2015/06/01/quels-sont-les-interdits-a-ne-jamais-commettre-dans-votre-seduction/</loc>
+		<lastmod>2015-06-03T12:57:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1714: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/05/26/les-5-applications-sportives-indispensables/</loc>
-		<lastmod>2015-05-27T11:58:11+00:00</lastmod>
+		<loc>http://blog.run2meet.co:8888/2015/05/26/les-5-applications-sportives-indispensables/</loc>
+		<lastmod>2015-06-03T12:54:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>http://46.101.18.108/page-d-exemple/</loc>
-		<lastmod>2015-05-27T11:37:28+00:00</lastmod>
+		<loc>http://blog.run2meet.co:8888/page-d-exemple/</loc>
+		<lastmod>2015-06-01T15:16:40+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
+<!-- Debug: Priority report of postID 2212: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/05/21/5-bonnes-raisons-de-sinscrire-sur-un-site-de-rencontre/</loc>
+		<lastmod>2015-05-21T09:55:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
 <!-- Debug: Priority report of postID 1763: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/05/15/le-sport-ailleurs-praia-do-norte-a-nazare/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/05/15/le-sport-ailleurs-praia-do-norte-a-nazare/</loc>
 		<lastmod>2015-05-15T08:19:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1593: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/05/13/la-tenue-de-sport-dune-girly-sportive/</loc>
+		<lastmod>2015-05-13T09:11:31+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1649: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/05/11/le-twerk-un-sport-ou-pas/</loc>
+		<lastmod>2015-05-11T08:46:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1559: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/05/07/cest-beau-et-cest-bon/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/05/07/cest-beau-et-cest-bon/</loc>
 		<lastmod>2015-05-07T09:59:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1640: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/05/07/comment-rester-motive/</loc>
+		<lastmod>2015-05-07T09:06:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1615: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/05/06/comment-tuer-cette-bonne-vieille-cellulite/</loc>
+		<lastmod>2015-05-06T09:40:04+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1492: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/05/05/les-proteines-vos-amis-pour-la-vie/</loc>
+		<lastmod>2015-05-05T10:08:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1535: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/04/30/la-libido-vient-en-mangeant/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/04/30/la-libido-vient-en-mangeant/</loc>
 		<lastmod>2015-04-30T08:51:48+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1498: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/04/28/prendre-confiance-en-soi-pour-reussir-un-premier-rendez-vous-amoureux/</loc>
+		<lastmod>2015-04-28T10:00:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1468: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/04/27/courir-pour-se-sentir-mieux/</loc>
+		<lastmod>2015-04-27T07:00:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1467: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/04/24/le-sport-createur-de-nouvelles-relations/</loc>
+		<lastmod>2015-04-24T09:36:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1441: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/04/22/fit-your-dreams-tiens-tiens/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/04/22/fit-your-dreams-tiens-tiens/</loc>
 		<lastmod>2015-04-22T09:08:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1426: Comments: 1 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/04/21/lalimentation-la-clef-du-succes/</loc>
+		<lastmod>2015-04-21T10:35:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1417: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/04/20/est-ce-quune-femme-doit-etre-entreprenante-sur-un-site-de-rencontre/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/04/20/est-ce-quune-femme-doit-etre-entreprenante-sur-un-site-de-rencontre/</loc>
 		<lastmod>2015-04-20T09:38:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1409: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/04/16/arme-fatale/</loc>
+		<lastmod>2015-04-16T09:51:53+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1395: Comments: 0 of 22 = 0 points -->
+	<url>
+		<loc>http://blog.run2meet.co:8888/2015/04/15/pourquoi-lhumour-plait-aux-femmes-meme-sur-un-site-de-rencontre/</loc>
+		<lastmod>2015-04-15T09:47:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1382: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/04/13/potion-presque-magique-le-lait-dor/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/04/13/potion-presque-magique-le-lait-dor/</loc>
 		<lastmod>2015-04-13T08:34:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1373: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/04/03/le-sport-ailleurs-blyde-river-canyon/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/04/03/le-sport-ailleurs-blyde-river-canyon/</loc>
 		<lastmod>2015-04-03T15:28:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1357: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/03/25/nous-avons-teste-le-love-coaching-dalexandre-cormont/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/03/25/nous-avons-teste-le-love-coaching-dalexandre-cormont/</loc>
 		<lastmod>2015-03-25T13:12:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1350: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/03/19/un-air-dailleurs-en-france/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/03/19/un-air-dailleurs-en-france/</loc>
 		<lastmod>2015-03-19T10:06:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1332: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/03/14/sooo-bio-tiful/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/03/14/sooo-bio-tiful/</loc>
 		<lastmod>2015-03-14T11:14:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1310: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/03/11/un-peu-de-sucre-tres-chere/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/03/11/un-peu-de-sucre-tres-chere/</loc>
 		<lastmod>2015-03-11T13:30:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1302: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/03/10/idees-recues-sur-le-dodo/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/03/10/idees-recues-sur-le-dodo/</loc>
 		<lastmod>2015-03-10T10:55:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1290: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/03/01/superfood-kecece/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/03/01/superfood-kecece/</loc>
 		<lastmod>2015-03-01T12:41:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1276: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/02/23/un-point-pour-les-vegetariens/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/02/23/un-point-pour-les-vegetariens/</loc>
 		<lastmod>2015-02-23T09:54:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1263: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/02/11/1263/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/02/11/1263/</loc>
 		<lastmod>2015-02-11T22:09:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1230: Comments: 2 of 22 = 0.1 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/02/05/supporter-une-nana-chapeau-bas/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/02/05/supporter-une-nana-chapeau-bas/</loc>
 		<lastmod>2015-02-05T09:31:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1218: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/01/29/le-bubble-footbal/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/01/29/le-bubble-footbal/</loc>
 		<lastmod>2015-01-29T09:57:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1215: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/01/19/ces-petites-choses-quon-ne-supporte-pas-chez-les-autres/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/01/19/ces-petites-choses-quon-ne-supporte-pas-chez-les-autres/</loc>
 		<lastmod>2015-01-19T15:19:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1205: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/01/12/la-legende-des-resolutions-du-nouvel-an/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/01/12/la-legende-des-resolutions-du-nouvel-an/</loc>
 		<lastmod>2015-01-12T13:13:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1193: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2015/01/05/du-sport-aux-huiles-essentielles/</loc>
+		<loc>http://blog.run2meet.co:8888/2015/01/05/du-sport-aux-huiles-essentielles/</loc>
 		<lastmod>2015-01-05T11:19:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1181: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/12/22/la-journee-mondiale-de-lorgasme/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/12/22/la-journee-mondiale-de-lorgasme/</loc>
 		<lastmod>2014-12-22T20:57:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1163: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/12/11/les-femmes-et-leurs-copines/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/12/11/les-femmes-et-leurs-copines/</loc>
 		<lastmod>2014-12-11T11:42:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1151: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/12/03/les-hommes-et-leurs-potes/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/12/03/les-hommes-et-leurs-potes/</loc>
 		<lastmod>2014-12-03T17:29:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1130: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/11/25/la-drague-selon-le-docteur-racolot/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/11/25/la-drague-selon-le-docteur-racolot/</loc>
 		<lastmod>2014-11-25T20:24:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1106: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/11/17/30-idees-dautomne/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/11/17/30-idees-dautomne/</loc>
 		<lastmod>2014-11-17T13:48:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1095: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/11/12/amitie-hommes-femmes-ca-marche/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/11/12/amitie-hommes-femmes-ca-marche/</loc>
 		<lastmod>2014-11-12T11:03:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1088: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/11/05/faut-il-vivre-ensemble/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/11/05/faut-il-vivre-ensemble/</loc>
 		<lastmod>2014-11-05T10:04:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1076: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/10/28/beaute-recettes-old-school/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/10/28/beaute-recettes-old-school/</loc>
 		<lastmod>2014-10-28T21:55:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1069: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/10/20/la-clef-du-petit-dejeuner/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/10/20/la-clef-du-petit-dejeuner/</loc>
 		<lastmod>2014-10-20T10:09:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1063: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/10/12/ces-couples-qui-nous-agacent/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/10/12/ces-couples-qui-nous-agacent/</loc>
 		<lastmod>2014-10-12T19:42:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1059: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/10/06/entrainement-en-fractionne-kecece/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/10/06/entrainement-en-fractionne-kecece/</loc>
 		<lastmod>2014-10-06T09:03:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1054: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/09/29/le-mystere-intersideral-de-lorgasme-feminin/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/09/29/le-mystere-intersideral-de-lorgasme-feminin/</loc>
 		<lastmod>2014-09-29T09:41:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1048: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/09/21/amour-etes-vous-prets/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/09/21/amour-etes-vous-prets/</loc>
 		<lastmod>2014-09-21T10:16:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1043: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/09/16/la-rentree-cest-lamour/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/09/16/la-rentree-cest-lamour/</loc>
 		<lastmod>2014-09-16T09:31:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1039: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/09/07/rentree-sportive-feminine-2/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/09/07/rentree-sportive-feminine-2/</loc>
 		<lastmod>2014-09-07T21:47:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1030: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/09/02/rentree-efficace-et-sportive-the-mud-day/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/09/02/rentree-efficace-et-sportive-the-mud-day/</loc>
 		<lastmod>2014-09-02T09:10:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1023: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/08/26/le-sexe-a-laise/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/08/26/le-sexe-a-laise/</loc>
 		<lastmod>2014-08-26T09:16:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1018: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/08/21/le-fantasme-du-rugbyman/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/08/21/le-fantasme-du-rugbyman/</loc>
 		<lastmod>2014-08-21T09:20:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1012: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/08/11/sport-coeur-coeur-coeur/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/08/11/sport-coeur-coeur-coeur/</loc>
 		<lastmod>2014-08-11T09:04:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1006: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/08/05/pousse-toi-que-je-te-repousse/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/08/05/pousse-toi-que-je-te-repousse/</loc>
 		<lastmod>2014-08-05T10:49:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 1003: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/07/28/faites-du-squash/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/07/28/faites-du-squash/</loc>
 		<lastmod>2014-07-28T08:20:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 992: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/07/20/amour-dete-amour-leger/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/07/20/amour-dete-amour-leger/</loc>
 		<lastmod>2014-07-20T18:24:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 982: Comments: 3 of 22 = 0.1 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/07/14/anecdotes-sportives/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/07/14/anecdotes-sportives/</loc>
 		<lastmod>2014-07-14T16:05:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 978: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/07/07/les-erreurs-masculines-au-lit/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/07/07/les-erreurs-masculines-au-lit/</loc>
 		<lastmod>2014-07-07T10:03:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 974: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/06/29/lescalade-dans-tous-les-sens/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/06/29/lescalade-dans-tous-les-sens/</loc>
 		<lastmod>2014-06-29T21:09:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 969: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/06/22/ce-que-veulent-les-hommes/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/06/22/ce-que-veulent-les-hommes/</loc>
 		<lastmod>2014-06-22T20:28:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 960: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/06/14/rendez-vous-run2meet/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/06/14/rendez-vous-run2meet/</loc>
 		<lastmod>2014-06-14T09:13:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 947: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/06/03/recettes-post-sportives/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/06/03/recettes-post-sportives/</loc>
 		<lastmod>2014-06-03T09:26:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 942: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/05/25/le-surf-sous-un-autre-angle/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/05/25/le-surf-sous-un-autre-angle/</loc>
 		<lastmod>2014-05-25T22:56:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 936: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/05/19/love-jalousie/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/05/19/love-jalousie/</loc>
 		<lastmod>2014-05-19T09:20:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 922: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/05/12/des-competitions-sportives-insolites/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/05/12/des-competitions-sportives-insolites/</loc>
 		<lastmod>2014-05-12T09:14:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 914: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/05/05/pourquoi-seduire-en-ligne/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/05/05/pourquoi-seduire-en-ligne/</loc>
 		<lastmod>2014-05-05T08:15:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 910: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/04/27/et-lentrainement-seul-ou-en-couple/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/04/27/et-lentrainement-seul-ou-en-couple/</loc>
 		<lastmod>2014-04-27T18:15:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 905: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/04/21/rendez-vous-sportifs-a-paris/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/04/21/rendez-vous-sportifs-a-paris/</loc>
 		<lastmod>2014-04-21T13:04:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 897: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/04/13/qui-se-ressemble-sassemble-2/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/04/13/qui-se-ressemble-sassemble-2/</loc>
 		<lastmod>2014-04-13T18:16:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 892: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/04/07/qui-se-ressemble-sassemble/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/04/07/qui-se-ressemble-sassemble/</loc>
 		<lastmod>2014-04-07T06:49:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 872: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/03/31/les-hommes-sont-aveugles/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/03/31/les-hommes-sont-aveugles/</loc>
 		<lastmod>2014-03-31T09:05:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 869: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/03/23/le-plaisir-de-courir-pour-dautres/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/03/23/le-plaisir-de-courir-pour-dautres/</loc>
 		<lastmod>2014-03-23T19:39:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 861: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/03/16/tous-des-c-vs-toutes-des-s/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/03/16/tous-des-c-vs-toutes-des-s/</loc>
 		<lastmod>2014-03-16T22:51:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 857: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/03/09/la-natation-sous-un-autre-angle/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/03/09/la-natation-sous-un-autre-angle/</loc>
 		<lastmod>2014-03-09T18:14:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 844: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/03/02/de-la-glisse-a-torcy/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/03/02/de-la-glisse-a-torcy/</loc>
 		<lastmod>2014-03-02T18:51:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 836: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/02/24/legerete-philosophie-de-vie-sportive/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/02/24/legerete-philosophie-de-vie-sportive/</loc>
 		<lastmod>2014-02-24T09:19:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 831: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/02/16/originalement-saint-valentin/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/02/16/originalement-saint-valentin/</loc>
 		<lastmod>2014-02-16T23:54:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 823: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/02/09/airboard-grand-moment-enneige/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/02/09/airboard-grand-moment-enneige/</loc>
 		<lastmod>2014-02-09T16:27:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 796: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/02/02/moi-homme-vouloir-draguer-femme/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/02/02/moi-homme-vouloir-draguer-femme/</loc>
 		<lastmod>2014-02-02T18:02:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 788: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/01/27/seduire-en-ligne-avec-classe/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/01/27/seduire-en-ligne-avec-classe/</loc>
 		<lastmod>2014-01-27T21:01:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 776: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/01/21/sport-de-combat-why-not/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/01/21/sport-de-combat-why-not/</loc>
 		<lastmod>2014-01-21T09:17:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 762: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/01/12/jechope-com-et-lart-de-seduire-une-femme/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/01/12/jechope-com-et-lart-de-seduire-une-femme/</loc>
 		<lastmod>2014-01-12T18:41:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 759: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/01/12/je-taime-comment-et-quand/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/01/12/je-taime-comment-et-quand/</loc>
 		<lastmod>2014-01-12T18:11:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 744: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/01/06/la-communication-hommesfemmes-outch/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/01/06/la-communication-hommesfemmes-outch/</loc>
 		<lastmod>2014-01-06T00:22:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 736: Comments: 2 of 22 = 0.1 points -->
 	<url>
-		<loc>http://46.101.18.108/2014/01/01/10-raisons-de-sortir-avec-une-sportifve/</loc>
+		<loc>http://blog.run2meet.co:8888/2014/01/01/10-raisons-de-sortir-avec-une-sportifve/</loc>
 		<lastmod>2014-01-01T18:18:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 729: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/12/22/lieux-de-rencontres-and-the-winner-is/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/12/22/lieux-de-rencontres-and-the-winner-is/</loc>
 		<lastmod>2013-12-22T22:09:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 723: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/12/15/le-crossfit-ou-la-culture-de-la-performance-physique/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/12/15/le-crossfit-ou-la-culture-de-la-performance-physique/</loc>
 		<lastmod>2013-12-15T13:38:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 716: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/12/09/sport-amour-et-endorphines/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/12/09/sport-amour-et-endorphines/</loc>
 		<lastmod>2013-12-09T10:30:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 704: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/12/01/coucher-le-premier-soir-bah-quoi/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/12/01/coucher-le-premier-soir-bah-quoi/</loc>
 		<lastmod>2013-12-01T17:37:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 694: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/11/24/quelques-hygienes-de-vie-sportives/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/11/24/quelques-hygienes-de-vie-sportives/</loc>
 		<lastmod>2013-11-24T15:29:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 687: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/11/17/comment-faire-fuir-une-femme-a-un-date/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/11/17/comment-faire-fuir-une-femme-a-un-date/</loc>
 		<lastmod>2013-11-17T20:12:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 671: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/11/11/le-2e-rendez-vous-check-point/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/11/11/le-2e-rendez-vous-check-point/</loc>
 		<lastmod>2013-11-11T15:07:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 660: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/11/04/une-foulee-avec-geraldine-gravier-richter/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/11/04/une-foulee-avec-geraldine-gravier-richter/</loc>
 		<lastmod>2013-11-04T15:35:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 646: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/10/27/lamour-a-letat-chimique/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/10/27/lamour-a-letat-chimique/</loc>
 		<lastmod>2013-10-27T20:39:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 635: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/10/21/le-footgolf-classe-et-ballon-rond/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/10/21/le-footgolf-classe-et-ballon-rond/</loc>
 		<lastmod>2013-10-21T09:43:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 621: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/10/13/celibataire-so-what/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/10/13/celibataire-so-what/</loc>
 		<lastmod>2013-10-13T11:33:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 613: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/10/06/la-france-et-ses-sports-fetiches/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/10/06/la-france-et-ses-sports-fetiches/</loc>
 		<lastmod>2013-10-06T09:27:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 598: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/09/29/lattirance-une-formule-chimique/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/09/29/lattirance-une-formule-chimique/</loc>
 		<lastmod>2013-09-29T09:56:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 580: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/09/26/so-run2meet-la-course-des-celibats/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/09/26/so-run2meet-la-course-des-celibats/</loc>
 		<lastmod>2013-09-26T07:06:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 561: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/09/12/le-bumball-ou-le-scratch-infernal/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/09/12/le-bumball-ou-le-scratch-infernal/</loc>
 		<lastmod>2013-09-12T09:49:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 531: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/09/09/lart-dun-profil-efficace/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/09/09/lart-dun-profil-efficace/</loc>
 		<lastmod>2013-09-09T15:36:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 510: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/09/02/le-sport-pas-toujours-sexy-mais-on-laime-quand-meme/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/09/02/le-sport-pas-toujours-sexy-mais-on-laime-quand-meme/</loc>
 		<lastmod>2013-09-02T16:44:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 493: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/08/26/les-error-404-de-la-seduction-feminine/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/08/26/les-error-404-de-la-seduction-feminine/</loc>
 		<lastmod>2013-08-26T14:37:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 478: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/08/20/site-de-rencontre-mon-amour/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/08/20/site-de-rencontre-mon-amour/</loc>
 		<lastmod>2013-08-20T08:17:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 469: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/08/15/manipulateurs-menteurs-imposteurs-clique-droit-supprimer/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/08/15/manipulateurs-menteurs-imposteurs-clique-droit-supprimer/</loc>
 		<lastmod>2013-08-15T14:35:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 453: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/07/23/aux-extremites-du-sport/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/07/23/aux-extremites-du-sport/</loc>
 		<lastmod>2013-07-23T07:54:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 432: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/07/15/accostez-les-sports-a-rencontres/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/07/15/accostez-les-sports-a-rencontres/</loc>
 		<lastmod>2013-07-15T22:18:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 353: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/technique-drague-a-eviter</loc>
+		<loc>http://blog.run2meet.co:8888/technique-drague-a-eviter</loc>
 		<lastmod>2013-06-20T13:08:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 396: Comments: 1 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/kdance-moving</loc>
+		<loc>http://blog.run2meet.co:8888/kdance-moving</loc>
 		<lastmod>2013-06-14T07:50:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 328: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/premier-rendez-vous-erreur-a-eviter</loc>
+		<loc>http://blog.run2meet.co:8888/premier-rendez-vous-erreur-a-eviter</loc>
 		<lastmod>2013-06-03T09:15:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 300: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/05/27/language-corporel-et-seduction-comment-savoir-si-je-lui-plais/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/05/27/language-corporel-et-seduction-comment-savoir-si-je-lui-plais/</loc>
 		<lastmod>2013-05-27T08:24:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 284: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/05/19/le-sport-favorise-t-il-la-drague-et-lamour/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/05/19/le-sport-favorise-t-il-la-drague-et-lamour/</loc>
 		<lastmod>2013-05-19T17:46:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 260: Comments: 2 of 22 = 0.1 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/05/11/comment-faire-des-rencontres-a-la-salle-de-sport/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/05/11/comment-faire-des-rencontres-a-la-salle-de-sport/</loc>
 		<lastmod>2013-05-11T18:30:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 155: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/03/24/le-sport-comme-force-mentale-sport-de-combat/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/03/24/le-sport-comme-force-mentale-sport-de-combat/</loc>
 		<lastmod>2013-03-24T20:11:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 115: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/03/12/jadore-le-cafe-2/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/03/12/jadore-le-cafe-2/</loc>
 		<lastmod>2013-03-12T17:54:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 68: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/03/10/7-manieres-de-charmer-une-fille-au-premier-rendez-vous/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/03/10/7-manieres-de-charmer-une-fille-au-premier-rendez-vous/</loc>
 		<lastmod>2013-03-10T10:58:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 62: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/03/04/harlem-shake-original-gopro-nrfight-club-paris/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/03/04/harlem-shake-original-gopro-nrfight-club-paris/</loc>
 		<lastmod>2013-03-04T23:04:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 55: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/03/04/le-sport-comme-moyen-de-rencontrer-des-gens-et-de-voyager/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/03/04/le-sport-comme-moyen-de-rencontrer-des-gens-et-de-voyager/</loc>
 		<lastmod>2013-03-04T22:51:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 29: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/03/02/le-sport-comme-entretien-de-soi-physique-et-mental/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/03/02/le-sport-comme-entretien-de-soi-physique-et-mental/</loc>
 		<lastmod>2013-03-02T15:48:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 <!-- Debug: Priority report of postID 13: Comments: 0 of 22 = 0 points -->
 	<url>
-		<loc>http://46.101.18.108/2013/03/02/remise-en-forme-tout-ce-quil-faut-savoir-sur-les-idees-recues/</loc>
+		<loc>http://blog.run2meet.co:8888/2013/03/02/remise-en-forme-tout-ce-quil-faut-savoir-sur-les-idees-recues/</loc>
 		<lastmod>2013-03-02T15:39:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>

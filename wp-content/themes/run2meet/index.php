@@ -24,10 +24,21 @@ get_header(); ?>
 			  while (have_posts()) : the_post();
 			    if ( is_sticky() ) :
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . ');">';
-			       the_title();
-			       the_excerpt();
-						echo '</div>';
+						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . ');">';    
+                        echo '<div class="slick-square-container">
+                          <div class="slick-square">
+                            <div class="slick-rotate-legend">
+                              <span class="slick-legend">À la une</span>
+                            </div>
+                              <div class="slick-table">
+			                   <h2 class="slick-title">';
+                                the_title();
+                                echo '</h2>
+                                    <a href="'.get_permalink().'">Lire la suite</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>';
 			    endif;
 			  endwhile;
 			}
