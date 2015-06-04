@@ -165,4 +165,10 @@
 
   });
 
+  // Masonry init config with jQuery
+  $('.grid-r2m').masonry({
+    itemSelector: '.col-r2m',
+    columnWidth: 210
+  });
+
 } )( jQuery );

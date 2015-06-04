@@ -24,7 +24,7 @@ get_header(); ?>
 			  while (have_posts()) : the_post();
 			    if ( is_sticky() ) :
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . ');">';    
+						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . ');">';
                         echo '<div class="slick-square-container">
                           <div class="slick-square">
                             <div class="slick-rotate-legend">
@@ -52,6 +52,7 @@ get_header(); ?>
 		</div>
 
 		<main id="main" class="site-main" role="main">
+			<div class="wrapper grid-r2m">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -65,14 +66,169 @@ get_header(); ?>
 			<?php
 			$query = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
 			// Start the loop.
-			while ( have_posts() ) : the_post();
+			while ( $query->have_posts() ) : $query->the_post();
 
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'content', get_post_format() );
+				$value = get_field( "column_type" );
+
+				/*
+				 * col-1x2 : 1 colonnes, 2 lignes
+				 * col-2x1 : 2 colonnes, 1 ligne
+				 * col-2x1-reverse : 2 colonnes, 1 ligne, photo inverse
+				 * col-2x2 : 2 colonnes, 2 lignes
+				 * col-3x2 : 3 colonnes, 2 lignes
+				 * col-5x2 : 5 colonnes, 2 lignes
+				 */
+
+				$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+				$normal_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+
+				if( $value == 'col-1x2') {
+					echo '
+					<div class="col-1x2 col-r2m">
+						<div class="image-area">
+						<a href="'. esc_url( get_permalink() ) .'">
+						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+						</a>
+						</div>
+						<div class="text-area">
+							<span class="view-count">';
+							the_views();
+					echo '</span>
+							<h2><a href="'. esc_url( get_permalink() ) .'">';
+								the_title();
+					echo '</a></h2>
+							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+						</div>
+					</div>';
+
+				} elseif ($value == 'col-2x1') {
+					echo '
+					<div class="col-2x1 col-r2m">
+						<div class="image-area">
+						<a href="'. esc_url( get_permalink() ) .'">
+						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+						</a>
+						</div>
+						<div class="text-area">
+							<span class="view-count">';
+							the_views();
+					echo '</span>
+							<h2><a href="'. esc_url( get_permalink() ) .'">';
+								the_title();
+					echo '</a></h2>
+							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+						</div>
+					</div>';
+
+				} elseif ($value == 'col-2x1-reverse') {
+					echo '
+					<div class="col-2x1-reverse col-r2m">
+						<div class="text-area">
+							<span class="view-count">';
+							the_views();
+					echo '</span>
+							<h2><a href="'. esc_url( get_permalink() ) .'">';
+								the_title();
+					echo '</a></h2>
+							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+						</div>
+						<div class="image-area">
+						<a href="'. esc_url( get_permalink() ) .'">
+						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+						</a>
+						</div>
+					</div>';
+
+				} elseif ($value == 'col-2x2') {
+					echo '
+					<div class="col-2x2 col-r2m">
+						<div class="image-area">
+						<a href="'. esc_url( get_permalink() ) .'">
+							<img src="'. $normal_image_url[0] .'" width="420" height="420" alt="" />
+							<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+						</a>
+						<div class="text-area">
+							<span class="view-count">';
+							the_views();
+					echo '</span>
+							<h2><a href="'. esc_url( get_permalink() ) .'">';
+								the_title();
+					echo '</a></h2>
+							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+						</div>
+						</div>
+					</div>';
+
+				} elseif ($value == 'col-3x2') {
+					echo '
+					<div class="col-3x2 col-r2m">
+						<div class="text-area">
+							<span class="view-count">';
+							the_views();
+					echo '</span>
+							<h2><a href="'. esc_url( get_permalink() ) .'">';
+								the_title();
+					echo '</a></h2>
+							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+						</div>
+						<div class="image-area">
+						<a href="'. esc_url( get_permalink() ) .'">
+						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+						</a>
+						</div>
+					</div>';
+
+				} elseif ($value == 'col-5x2') {
+					echo '
+					<div class="col-5x2 col-r2m">
+						<div class="text-area">
+							<span class="view-count">';
+							the_views();
+					echo '</span>
+							<h2><a href="'. esc_url( get_permalink() ) .'">';
+								the_title();
+					echo '</a></h2>
+							<span class="sep-x"></span>
+							<span class="categorie-list">' . get_the_category_list() . '</span>
+						</div>
+						<div class="image-area">
+						<a href="'. esc_url( get_permalink() ) .'">
+						<img src="'. $image_url[0] .'" width="150" height="420" alt="" />
+						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+						</a>
+						</div>
+					</div>';
+				} else {
+					echo '
+					<div class="col-2x1 col-r2m">
+						<div class="image-area">
+						<a href="'. esc_url( get_permalink() ) .'">
+						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+						</a>
+						</div>
+						<div class="text-area">
+							<span class="view-count">';
+							the_views();
+					echo '</span>
+							<h2><a href="'. esc_url( get_permalink() ) .'">';
+								the_title();
+					echo '</a></h2>
+							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+						</div>
+					</div>';
+
+				}
+
 
 			// End the loop.
 			endwhile;
@@ -91,6 +247,7 @@ get_header(); ?>
 		endif;
 		?>
 
+			</div><!--.wrapper -->
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
