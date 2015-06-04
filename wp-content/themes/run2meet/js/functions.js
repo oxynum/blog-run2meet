@@ -162,7 +162,22 @@
   // Custom JS
   // Animation Slider
   $('.sticky_module').slick({
-
+    dots: false,
+    autoplay: true,
+    pauseOnHover: false,
+    cssEase: 'ease-in-out',
+    autoplaySpeed: 3500,
+    speed: 1000
+  });
+  
+  $('.slider-text').slick({
+    asNavFor: '.sticky_module',
+    dots: true,
+    autoplay: true,
+    pauseOnHover: false,
+    cssEase: 'ease-in-out',
+    autoplaySpeed: 3500,
+    speed: 850
   });
 
   // Masonry init config with jQuery

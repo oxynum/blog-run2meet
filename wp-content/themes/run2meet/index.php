@@ -24,31 +24,47 @@ get_header(); ?>
 			  while (have_posts()) : the_post();
 			    if ( is_sticky() ) :
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . ');">';
-                        echo '<div class="slick-square-container">
-                          <div class="slick-square">
-                            <div class="slick-rotate-legend">
-                              <span class="slick-legend">À la une</span>
-                            </div>
-                              <div class="slick-table">
-			                   <h2 class="slick-title">';
-                                the_title();
-                                echo '</h2>
-                                    </div>
-                                    <div class="slick-table">
-                                      <a href="'.get_permalink().'">Lire la suite</a>
-                                    </div>
-                                    <div class="slick-table">
-                                      <span class="underline"></span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>';
+						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . '); background-position: center '.get_field('image_slider_position').'px;"></div>';
+                        
+                        
+			    endif;
+			  endwhile;
+            }
+              ?>
+      </div>
+      <div class="sticky_module_2">
+         <div class="slick-slide_2"><div class="slick-square-container">
+          <div class="slick-square">
+            <div class="slick-rotate-legend">
+              <span class="slick-legend">À la une</span>
+            </div>
+             <div class="slider-text">                           
+              <?php              
+              query_posts('showposts=5');
+                if (have_posts()) {
+                  while (have_posts()) : the_post();
+                    if ( is_sticky() ) :
+                  echo '<div class="slick-slide">
+                          <div class="slick-table">
+                             <h2 class="slick-title">'. get_the_title().'</h2>
+                          </div>
+                          <div class="slick-table">
+                            <a href="'.get_permalink().'">Lire la suite</a>
+                          </div>
+                          <div class="slick-table">
+                            <span class="underline"></span>
+                          </div>
+                        </div>';                      
+                        
 			    endif;
 			  endwhile;
 			}
 			wp_reset_query();
 			?>
+             </div> 
+              </div>
+            </div>
+          </div>
 		</div>
 
 		<main id="main" class="site-main" role="main">

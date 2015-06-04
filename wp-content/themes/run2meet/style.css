@@ -780,7 +780,7 @@ button.submit {
 /* Header */
 
 /* Slider */
-.sticky_module {
+.sticky_module, .sticky_module_2 {
   height: 630px;
 }
 
@@ -791,25 +791,24 @@ button.submit {
   background-position: center bottom;
 }
 
-.sticky_module .slick-track .slick-slide .slick-square-container{
+.sticky_module_2 .slick-slide_2 .slick-square-container{
   position: relative;
   width: 1050px;
   height: 630px;
   margin: 0 auto;
 }
 
-.sticky_module .slick-track .slick-slide .slick-square{
+.sticky_module_2 .slick-slide_2 .slick-square{
   position: absolute;
   bottom: 0; right: 0;
   width: 420px;
   height: 420px;
-  background: #b22f78;
+  
   opacity: .85;
-  -webkit-clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
-  clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+  
 }
 
-.sticky_module .slick-track .slick-slide .slick-square span.slick-legend{
+.sticky_module_2 .slick-slide_2 .slick-square span.slick-legend{
   position: absolute;
   display: block;
   color: white;
@@ -826,13 +825,15 @@ button.submit {
   transform: skewX(-10deg);
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-rotate-legend{
+.sticky_module_2 .slick-slide_2 .slick-square .slick-rotate-legend{
   display: table;
+  position: absolute;
+  z-index: 10;
   width: 100%;
   transform: rotate(-10deg);
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-table{
+.sticky_module_2 .slick-slide_2 .slick-square .slick-table{
   display: table;
   position: absolute;
   top: 0;
@@ -840,7 +841,7 @@ button.submit {
   height: 100%;
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-table h2.slick-title{
+.sticky_module_2 .slick-slide_2 .slick-square .slick-table h2.slick-title{
   display: table-cell;
   color: white;
   font-family: 'DINCond-Medium';
@@ -853,7 +854,7 @@ button.submit {
   text-transform: uppercase;
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-table a{
+.sticky_module_2 .slick-slide_2 .slick-square .slick-table a{
   display: table-cell;
   color: white;
   font-family: 'DINCond-Medium';
@@ -866,7 +867,7 @@ button.submit {
   text-transform: uppercase;
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-table a:before{
+.sticky_module_2 .slick-slide_2 .slick-square .slick-table a:before{
   content: '';
   position: absolute;
   margin-top: 20px;
@@ -876,7 +877,7 @@ button.submit {
   background: white;
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-table a:after{
+.sticky_module_2 .slick-slide_2 .slick-square .slick-table a:after{
   content: '';
   position: absolute;
   margin-top: 20px;
@@ -886,7 +887,7 @@ button.submit {
   background: white;
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-table span.underline{
+.sticky_module_2 .slick-slide_2 .slick-square .slick-table span.underline{
   display: table-cell;
   position: absolute;
   bottom: 26px;
@@ -896,6 +897,64 @@ button.submit {
   border-bottom: 1px solid #fff;
 }
 
+.sticky_module_2 .slick-track .slick-slide {
+  position: relative;
+  height: 420px;
+  background: #b22f78;
+-webkit-clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+  clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+}
+.content-area {
+  position: relative;
+}
+.sticky_module_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+button.slick-prev, button.slick-next{
+  display: none !important;
+}
+
+ul.slick-dots{
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 50px;
+  margin: 0;
+}
+
+ul.slick-dots li{
+  display: inline-block;
+}
+
+ul.slick-dots li:not(:last-child){
+  padding-right: 6px;
+}
+
+ul.slick-dots li button{
+  background: white;
+  border-radius: 50%;
+  opacity: .5;
+  padding: 0;
+  text-indent: -1000em;
+  width: 6px;
+  height: 6px;
+}
+
+ul.slick-dots li.slick-active button{
+  opacity: 1;
+}
+
+ul.slick-dots li button:hover{
+  opacity: 1;
+}
+
+/* Main Content */
 .col-r2m {
 	background: #fff;
 	float: left;
