@@ -102,10 +102,12 @@ get_header(); ?>
 
 				$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
 				$normal_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
-
+				$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+				$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+				$category = get_the_category();
 				if( $value == 'col-1x2') {
 					echo '
-					<div class="col-1x2 col-r2m">
+					<div class="col-1x2 col-r2m '.  $category[0]->slug .'">
 						<div class="image-area">
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -187,19 +189,16 @@ get_header(); ?>
 					echo '
 					<div class="col-3x2 col-r2m">
 						<div class="text-area">
-							<span class="view-count">';
-							the_views();
-					echo '</span>
-							<h2><a href="'. esc_url( get_permalink() ) .'">';
-								the_title();
-					echo '</a></h2>
+						<div class="slick-rotate-legend">
+                <span class="slick-legend">' . get_the_category_list() . '</span>
+              </div>
+							<div class="area-layout-text">
+								<h2><a href="'. esc_url( get_permalink() ) .'">'. get_the_title() .'</a></h2>
+								<a href="'. esc_url( get_permalink() ) .'">Lire la suite</a>
+							</div>
 							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
-						<div class="image-area">
-						<a href="'. esc_url( get_permalink() ) .'">
-						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
-						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-						</a>
+						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');">
 						</div>
 					</div>';
 
@@ -233,12 +232,7 @@ get_header(); ?>
 						</a>
 						</div>
 						<div class="text-area">
-							<span class="view-count">';
-							the_views();
-					echo '</span>
-							<h2><a href="'. esc_url( get_permalink() ) .'">';
-								the_title();
-					echo '</a></h2>
+							<h2><a href="'. esc_url( get_permalink() ) .'">'. get_the_title() .'</a></h2>
 							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
 					</div>';
@@ -248,13 +242,9 @@ get_header(); ?>
 
 			// End the loop.
 			endwhile;
+			echo '';
 
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
+
 
 		// If no content, include the "No posts found" template.
 		else :
@@ -265,6 +255,15 @@ get_header(); ?>
 
 			</div><!--.wrapper -->
 		</main><!-- .site-main -->
+
+		<?php
+		// Previous/next page navigation.
+		the_posts_pagination( array(
+			'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+			'next_text'          => __( 'Next page', 'twentyfifteen' ),
+			'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+		) );
+		 ?>
 	</div><!-- .content-area -->
 
 <?php get_footer(); ?>

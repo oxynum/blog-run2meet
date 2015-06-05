@@ -672,6 +672,15 @@ a:focus {
 */
 
 /* Fonts */
+@font-face {
+  font-family: 'DINCond-ligth';
+  src: url('fonts/DINWeb-CondLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/DINWeb-CondLight.otf')  format('opentype'),
+    url('fonts/DINWeb-CondLight.woff') format('woff'),
+    url('fonts/DINWeb-CondLight.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'DINCond-Medium';
@@ -825,7 +834,30 @@ button.submit {
   transform: skewX(-10deg);
 }
 
-.sticky_module_2 .slick-slide_2 .slick-square .slick-rotate-legend{
+span.slick-legend{
+  position: absolute;
+  display: block;
+  color: white;
+  font-family: 'DINCond-Bold';
+  font-size: 20px;
+  letter-spacing: 0.0625em;
+  text-align: center;
+  top: 50px;
+  left: 50%;
+  margin-left: -55px;
+  text-transform: uppercase;
+  background: #ec008c;
+  padding: 0 10px;
+  transform: skewX(-10deg);
+}
+
+.col-r2m span.slick-legend ul li a {
+  color: #fff;
+  font-size: .85em;
+}
+
+
+.sticky_module .slick-track .slick-slide .slick-square .slick-rotate-legend{
   display: table;
   position: absolute;
   z-index: 10;
@@ -833,7 +865,14 @@ button.submit {
   transform: rotate(-10deg);
 }
 
-.sticky_module_2 .slick-slide_2 .slick-square .slick-table{
+
+.slick-rotate-legend{
+  display: table;
+  width: 100%;
+  transform: rotate(-10deg);
+}
+
+.sticky_module .slick-track .slick-slide .slick-square .slick-table{
   display: table;
   position: absolute;
   top: 0;
@@ -1006,8 +1045,8 @@ ul.slick-dots li button:hover{
   height: 420px;
 }
 .col-3x2 {
-  width: 620px;
-  height: 420px;
+	width: 630px;
+	height: 420px;
 }
 .col-2x1 .image-area, .col-2x1 .text-area, .col-2x1-reverse .image-area, .col-2x1-reverse .text-area {
   display: block;
@@ -1035,13 +1074,52 @@ ul.slick-dots li button:hover{
   clip-path: polygon(0 46%, 0 0, 100% 0, 100% 100%, 0 100%, 0 54%, 5% 50%);
 }
 
+.col-3x2 .image-area{
+  width: 630px;
+  height: 420px;
+}
+
+.col-3x2 .text-area{
+  position: absolute;
+  width: 630px;
+  height: 420px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  color : #fff;
+}
+
+.col-3x2 .text-area .area-layout-text {
+  color: #fff;
+  font-family: 'DINCond-ligth', sans-serif;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+.col-3x2 .text-area a{
+  color: #fff;
+}
+.col-3x2 .text-area h2 a {
+  font-size: 3.3em;
+  line-height: 1em;
+}
+
 .col-2x2 .text-area {
   display: none;
 }
 .col-2x2 .image-area {
-  display: block;
-  width: 420px;
-  height: 420px;
+	display: block;
+	width: 420px;
+	height: 420px;
+  background-size: cover;
+  background-position: center;
 }
 
 .col-2x2 .image-area img {
