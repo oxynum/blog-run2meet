@@ -46,10 +46,12 @@ get_header(); ?>
                     if ( is_sticky() ) :
                   echo '<div class="slick-slide">
                           <div class="slick-table">
-                             <h2 class="slick-title">'. get_the_title().'</h2>
+                             <h2 class="slick-title"><a href="'.get_permalink().'">'. get_the_title().'</a></h2>
                           </div>
-                          <div class="slick-table">
-                            <a href="'.get_permalink().'">Lire la suite</a>
+                          <div class="slick-tb-permalink">
+                            <div class="slick-table">
+                              <a href="'.get_permalink().'">Lire la suite</a>
+                            </div>
                           </div>
                           <div class="slick-table">
                             <span class="underline"></span>
@@ -110,6 +112,8 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 						<div class="text-area">
@@ -130,6 +134,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 						<div class="text-area">
@@ -159,6 +164,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 					</div>';
@@ -170,6 +176,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 							<img src="'. $normal_image_url[0] .'" width="420" height="420" alt="" />
 							<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                            <span class="image-area-link">Lire la suite</span>
 						</a>
 						<div class="text-area">
 							<span class="view-count">';
@@ -199,6 +206,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 					</div>';
@@ -220,6 +228,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="150" height="420" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 					</div>';
@@ -230,6 +239,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 						<div class="text-area">
