@@ -25,8 +25,8 @@ get_header(); ?>
 			    if ( is_sticky() ) :
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . '); background-position: center '.get_field('image_slider_position').'px;"></div>';
-                        
-                        
+
+
 			    endif;
 			  endwhile;
             }
@@ -38,30 +38,32 @@ get_header(); ?>
             <div class="slick-rotate-legend">
               <span class="slick-legend">À la une</span>
             </div>
-             <div class="slider-text">                           
-              <?php              
+             <div class="slider-text">
+              <?php
               query_posts('showposts=5');
                 if (have_posts()) {
                   while (have_posts()) : the_post();
                     if ( is_sticky() ) :
                   echo '<div class="slick-slide">
                           <div class="slick-table">
-                             <h2 class="slick-title">'. get_the_title().'</h2>
+                             <h2 class="slick-title"><a href="'.get_permalink().'">'. get_the_title().'</a></h2>
                           </div>
-                          <div class="slick-table">
-                            <a href="'.get_permalink().'">Lire la suite</a>
+                          <div class="slick-tb-permalink">
+                            <div class="slick-table">
+                              <a href="'.get_permalink().'">Lire la suite</a>
+                            </div>
                           </div>
                           <div class="slick-table">
                             <span class="underline"></span>
                           </div>
-                        </div>';                      
-                        
+                        </div>';
+
 			    endif;
 			  endwhile;
 			}
 			wp_reset_query();
 			?>
-             </div> 
+             </div>
               </div>
             </div>
           </div>
@@ -112,6 +114,8 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 						<div class="text-area">
@@ -132,6 +136,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 						<div class="text-area">
@@ -161,6 +166,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 					</div>';
@@ -172,6 +178,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 							<img src="'. $normal_image_url[0] .'" width="420" height="420" alt="" />
 							<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                            <span class="image-area-link">Lire la suite</span>
 						</a>
 						<div class="text-area">
 							<span class="view-count">';
@@ -198,7 +205,13 @@ get_header(); ?>
 							</div>
 							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
+
 						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');">
+
+						<a href="'. esc_url( get_permalink() ) .'">
+						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
+						</a>
 						</div>
 					</div>';
 
@@ -219,6 +232,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="150" height="420" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 					</div>';
@@ -229,6 +243,7 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 						<div class="text-area">
