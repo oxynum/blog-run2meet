@@ -256,9 +256,10 @@ function twentyfifteen_scripts() {
 		wp_enqueue_script( 'twentyfifteen-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20141010' );
 	}
 
-	// load masonry
+	// load masonry + infinitescroll
 	if ( is_home()) {
 		wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.min.js', array( 'jquery' ), '20150330' );
+		wp_enqueue_script( 'infinitescroll', get_template_directory_uri() . '/js/infinite-scroll.js', array( 'jquery' ), '20150330' );
 	}
 
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '20150330', true );
@@ -271,6 +272,11 @@ function twentyfifteen_scripts() {
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'twentyfifteen_scripts' );
+
+add_theme_support( 'infinite-scroll', array(
+'container' => 'content',
+'footer' => 'page',
+) );
 
 /**
  * Add featured image as background image to post navigation elements.

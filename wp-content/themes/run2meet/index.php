@@ -19,15 +19,19 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div class="sticky_module">
 			<?php
-			query_posts('showposts=5');
 			if (have_posts()) {
-			  while (have_posts()) : the_post();
+				$args_sticky = array(
+					'posts_per_page' => 3,
+					'post__in'  => get_option( 'sticky_posts' ),
+					'ignore_sticky_posts' => 3
+				);
+				$query_sticky = new WP_Query( $args_sticky );
+			  while ($query_sticky->have_posts()) : $query_sticky->the_post();
 			    if ( is_sticky() ) :
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . '); background-position: center '.get_field('image_slider_position').'px;"></div>';
-
-
-			    endif;
+						wp_reset_postdata();
+					endif;
 			  endwhile;
             }
               ?>
@@ -40,9 +44,15 @@ get_header(); ?>
             </div>
              <div class="slider-text">
               <?php
-              query_posts('showposts=5');
                 if (have_posts()) {
-                  while (have_posts()) : the_post();
+
+										$args_sticky_2 = array(
+											'posts_per_page' => 3,
+											'post__in'  => get_option( 'sticky_posts' ),
+											'ignore_sticky_posts' => 3
+										);
+										$query_sticky_2 = new WP_Query( $args_sticky );
+                  while ($query_sticky_2->have_posts()) : $query_sticky_2->the_post();
                     if ( is_sticky() ) :
                   echo '<div class="slick-slide">
                           <div class="slick-table">
@@ -57,11 +67,11 @@ get_header(); ?>
                             <span class="underline"></span>
                           </div>
                         </div>';
-
+												wp_reset_postdata();
 			    endif;
 			  endwhile;
 			}
-			wp_reset_query();
+
 			?>
              </div>
               </div>
@@ -74,6 +84,11 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+			<?php
+			
+
+			 ?>
+
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -82,9 +97,9 @@ get_header(); ?>
 
 
 			<?php
-			$query = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
+			//$query = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
 			// Start the loop.
-			while ( $query->have_posts() ) : $query->the_post();
+			while ( have_posts() ) : the_post();
 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -92,6 +107,7 @@ get_header(); ?>
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
 				$value = get_field( "column_type" );
+				$news_active = get_field( "newsletter_article" );
 
 				/*
 				 * col-1x2 : 1 colonnes, 2 lignes
@@ -108,68 +124,89 @@ get_header(); ?>
 				$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 				$category = get_the_category();
 				if( $value == 'col-1x2') {
-					echo '
-					<div class="col-1x2 col-r2m '.  $category[0]->slug .'">
-						<div class="image-area">
-						<a href="'. esc_url( get_permalink() ) .'">
-						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
-						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-                        <span class="image-area-link">Lire la suite</span>
-                        <span class="image-area-link">Lire la suite</span>
-						</a>
-						</div>
-						<div class="text-area">
-							<span class="view-count">';
-							the_views();
-					echo '</span>
-							<h2><a href="'. esc_url( get_permalink() ) .'">';
-								the_title();
-					echo '</a></h2>
-							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
-						</div>
-					</div>';
+							echo '
+							<div class="col-1x2 col-r2m '.  $category[0]->slug .'">
+								<div class="image-area">
+								<a href="'. esc_url( get_permalink() ) .'">
+								<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+								<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+		                        <span class="image-area-link">Lire la suite</span>
+		                        <span class="image-area-link">Lire la suite</span>
+								</a>
+								</div>
+								<div class="text-area">
+									<span class="view-count">';
+									the_views();
+							echo '</span>
+									<h2><a href="'. esc_url( get_permalink() ) .'">';
+										the_title();
+							echo '</a></h2>
+									<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+								</div>
+							</div>';
 
 				} elseif ($value == 'col-2x1') {
-					echo '
-					<div class="col-2x1 col-r2m">
-						<div class="image-area">
-						<a href="'. esc_url( get_permalink() ) .'">
-						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
-						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-                        <span class="image-area-link">Lire la suite</span>
-						</a>
-						</div>
-						<div class="text-area">
-							<span class="view-count">';
-							the_views();
-					echo '</span>
-							<h2><a href="'. esc_url( get_permalink() ) .'">';
-								the_title();
-					echo '</a></h2>
-							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
-						</div>
-					</div>';
+
+					if($news_active !== true) {
+						echo '<div class="col-2x1 col-r2m">
+							<div class="image-area">
+							<a href="'. esc_url( get_permalink() ) .'">
+							<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+							<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+	                        <span class="image-area-link">Lire la suite</span>
+							</a>
+							</div>
+							<div class="text-area">
+								<span class="view-count">';
+								the_views();
+						echo '</span>
+								<h2><a href="'. esc_url( get_permalink() ) .'">'. get_the_title() .'</a></h2>
+								<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+							</div>
+						</div>';
+					}	else {
+							echo '<div class="col-2x1 col-r2m">
+											<div class="newsletter-active-bloc">
+											<div class="slick-rotate-legend">
+													<span class="slick-legend">Newsletter</span>
+												</div>
+											<h2>'.get_the_title().'</h2>';
+											the_content();
+							echo '</div>
+							</div>';
+					}
 
 				} elseif ($value == 'col-2x1-reverse') {
-					echo '
-					<div class="col-2x1-reverse col-r2m">
-						<div class="text-area">
-							<span class="view-count">';
-							the_views();
-					echo '</span>
-							<h2><a href="'. esc_url( get_permalink() ) .'">';
-								the_title();
-					echo '</a></h2>
-							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
-						</div>
-						<div class="image-area">
-						<a href="'. esc_url( get_permalink() ) .'">
-						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
-						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-                        <span class="image-area-link">Lire la suite</span>
-						</a>
-						</div>
-					</div>';
+
+					if ($news_active !== true) {
+						echo '<div class="col-2x1-reverse col-r2m">
+							<div class="text-area">
+								<span class="view-count">';
+								the_views();
+						echo '</span>
+								<h2><a href="'. esc_url( get_permalink() ) .'">' . get_the_title();
+						echo '</a></h2>
+								<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
+							</div>
+							<div class="image-area">
+							<a href="'. esc_url( get_permalink() ) .'">
+							<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
+							<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
+	                        <span class="image-area-link">Lire la suite</span>
+							</a>
+							</div>
+						</div>';
+					}	else {
+							echo '<div class="col-2x1 reverse col-r2m">
+											<div class="newsletter-active-bloc">
+											<div class="slick-rotate-legend">
+													<span class="slick-legend">Newsletter</span>
+												</div>
+											<h2>'.get_the_title().'</h2>';
+											the_content();
+							echo '</div>
+							</div>';
+					}
 
 				} elseif ($value == 'col-2x2') {
 					echo '
@@ -251,32 +288,25 @@ get_header(); ?>
 					</div>';
 
 				}
+				wp_reset_postdata();
 
 
-			// End the loop.
-			endwhile;
-			echo '';
-
-
-
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
-
-		endif;
+				// End the loop.
+				endwhile;
+				// Previous/next page navigation.
+				the_posts_pagination( array(
+					'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+					'next_text'          => __( 'Next page', 'twentyfifteen' ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+				) );
+			// If no content, include the "No posts found" template.
+			else :
+				get_template_part( 'content', 'none' );
+			endif;
 		?>
 
 			</div><!--.wrapper -->
 		</main><!-- .site-main -->
-
-		<?php
-		// Previous/next page navigation.
-		the_posts_pagination( array(
-			'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-			'next_text'          => __( 'Next page', 'twentyfifteen' ),
-			'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-		) );
-		 ?>
 	</div><!-- .content-area -->
 
 <?php get_footer(); ?>

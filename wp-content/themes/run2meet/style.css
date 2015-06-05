@@ -675,7 +675,6 @@ a:focus {
 @font-face {
   font-family: 'DINCond-ligth';
   src: url('fonts/DINWeb-CondLight.eot?#iefix') format('embedded-opentype'),
-    url('fonts/DINWeb-CondLight.otf')  format('opentype'),
     url('fonts/DINWeb-CondLight.woff') format('woff'),
     url('fonts/DINWeb-CondLight.ttf')  format('truetype');
   font-weight: normal;
@@ -774,6 +773,10 @@ a:focus {
   height: 50px;
   position: relative;
   z-index: 50;
+}
+
+.site-content {
+  padding-bottom: 120px;
 }
 
 .site-title {
@@ -917,7 +920,7 @@ span.slick-legend{
 }
 
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-rotate-legend{
+.sticky_module_2 .slick-rotate-legend{
   display: table;
   position: absolute;
   z-index: 10;
@@ -932,7 +935,7 @@ span.slick-legend{
   transform: rotate(-10deg);
 }
 
-.sticky_module .slick-track .slick-slide .slick-square .slick-table{
+.sticky_module_2 .slick-track .slick-slide .slick-square .slick-table{
   display: table;
   top: 0;
   width: 100%;
@@ -952,8 +955,59 @@ span.slick-legend{
   text-transform: uppercase;
 }
 
+.col-2x1 .newsletter-active-bloc {
+  background-color: #7b0051;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  width: 420px;
+  height: 210px;
+}
+
+.col-2x1 .newsletter-active-bloc h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.col-2x1 .newsletter-active-bloc form {
+  display: block;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.col-2x1 .newsletter-active-bloc form input[type="submit"] {
+  background-color: #dc359b;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.col-2x1 .newsletter-active-bloc form input[type="submit"]:hover {
+  background-color: #ff58be;
+}
+
+.mc4wp-alert, .mc4wp-error {
+  font-size: .7em;
+}
+
+.slick-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
 .sticky_module_2 .slick-slide_2 .slick-square .slick-table h2.slick-title a{
   color: white;
+  outline: none;
 }
 
 .sticky_module_2 .slick-slide_2 .slick-square .slick-tb-permalink{
@@ -965,7 +1019,7 @@ span.slick-legend{
 }
 
 .sticky_module_2 .slick-slide_2 .slick-square .slick-tb-permalink .slick-table a{
-  display: table-cell;
+  display: block;
   color: white;
   font-family: 'DINCond-Medium';
   font-size: 14px;
@@ -975,6 +1029,7 @@ span.slick-legend{
   vertical-align: bottom;
   padding-bottom: 35px;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .sticky_module_2 .slick-slide_2 .slick-square .slick-tb-permalink .slick-table a:before{
@@ -1188,7 +1243,7 @@ ul.slick-dots li button:hover{
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  opacity: 0; 
+  opacity: 0;
   top: 0;
 }
 
@@ -1391,4 +1446,42 @@ ul.slick-dots li button:hover{
 
 .site-footer ul.site-social-networks li:not(:last-child){
   margin-right: 22px;
+}
+
+/* Pagination */
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+}
+.pagination h2{
+  display: none;
+}
+.pagination h2{
+  display: none;
+}
+.pagination .page-numbers{
+  display: none;
+}
+.pagination .nav-link {
+  width: 100%;
+}
+.pagination a.next.page-numbers {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #dc359b;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  left: 50%;
+  position: absolute;
+  margin-left: -25px;
+  top: 25px;
+  color: #fff;
+  font-size: .5em;
+  font-family: sans-serif;
+  line-height: 50px;
 }
