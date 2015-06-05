@@ -210,7 +210,6 @@ get_header(); ?>
 
 						<a href="'. esc_url( get_permalink() ) .'">
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 					</div>';
@@ -232,7 +231,6 @@ get_header(); ?>
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="150" height="420" alt="" />
 						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-                        <span class="image-area-link">Lire la suite</span>
 						</a>
 						</div>
 					</div>';

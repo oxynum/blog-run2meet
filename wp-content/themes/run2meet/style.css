@@ -707,45 +707,61 @@ a:focus {
 /* Icons */
 
 @font-face {
-  font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?1jae11');
-  src:url('fonts/icomoon.eot?#iefix1jae11') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1jae11') format('truetype'),
-    url('fonts/icomoon.woff?1jae11') format('woff'),
-    url('fonts/icomoon.svg?1jae11#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?6uiesa');
+	src:url('fonts/icomoon.eot?#iefix6uiesa') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?6uiesa') format('truetype'),
+		url('fonts/icomoon.woff?6uiesa') format('woff'),
+		url('fonts/icomoon.svg?6uiesa#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-facebook-footer:before {
+	content: "\e602";
+}
+.icon-gplus-footer:before {
+	content: "\e606";
+}
+.icon-instagram-footer:before {
+	content: "\e607";
+}
+.icon-mail-footer:before {
+	content: "\e608";
+}
+.icon-twitter-footer:before {
+	content: "\e609";
+}
 .icon-calendar:before {
-  content: "\e600";
+	content: "\e600";
 }
 .icon-facebook:before {
-  content: "\e601";
+	content: "\e601";
 }
 .icon-instagram:before {
-  content: "\e603";
+	content: "\e603";
 }
 .icon-mail:before {
-  content: "\e604";
+	content: "\e604";
 }
 .icon-twitter:before {
-  content: "\e605";
+	content: "\e605";
 }
+
 
 /* Header */
 .site-header {
@@ -835,6 +851,7 @@ button.submit {
 .sticky_module, .sticky_module_2 {
   height: 630px;
 }
+
 
 .sticky_module .slick-track .slick-slide {
   background-size: cover;
@@ -1099,8 +1116,8 @@ ul.slick-dots li button:hover{
   height: 420px;
 }
 .col-3x2 {
-	width: 630px;
-	height: 420px;
+  width: 630px;
+  height: 420px;
 }
 .col-2x1 .image-area, .col-2x1 .text-area, .col-2x1-reverse .image-area, .col-2x1-reverse .text-area {
   display: block;
@@ -1167,12 +1184,35 @@ ul.slick-dots li button:hover{
 }
 
 .col-2x2 .text-area {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: 0; 
+  top: 0;
+}
+
+.col-2x2 .text-area span.view-count{
   display: none;
 }
+
+.col-2x2 .text-area h2 a, .col-2x2 .text-area span.categorie-list ul.post-categories li a{
+  color: white;
+}
+
+.col-2x2 .text-area span.categorie-list span.sep-x{
+  background: white;
+}
+
+.col-r2m.col-2x2 .image-area:hover .text-area{
+  opacity: 1;
+  top: -100%;
+}
+
 .col-2x2 .image-area {
-	display: block;
-	width: 420px;
-	height: 420px;
+  display: block;
+  width: 420px;
+  height: 420px;
   background-size: cover;
   background-position: center;
 }
@@ -1248,12 +1288,6 @@ ul.slick-dots li button:hover{
   line-height: 420px;
 }
 
-.col-r2m .col-3x2 .image-area span.image-area-link{
-  width: 620px;
-  height: 420px;
-  line-height: 420px;
-}
-
 .col-r2m .plus .horizontal {
   height: 1px;
   margin-left: -7.5px;
@@ -1309,4 +1343,52 @@ ul.slick-dots li button:hover{
 .wrapper {
   width: 1050px;
   margin: auto;
+}
+
+/* Footer */
+
+.site-footer{
+  height: 345px;
+  background: #242323;
+  border-top: 2px solid #dc359b;
+  color: white;
+  text-align: center;
+}
+
+.site-footer .site-info{
+  position: relative;
+  top: 30px;
+}
+
+.site-footer .site-info .join-site{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  color: white;
+}
+
+.site-footer ul.site-social-networks{
+  position: relative;
+  top: 30px;
+  list-style: none;
+  margin: 0;
+}
+
+.site-footer ul.site-social-networks li{
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 1em;
+}
+
+.site-footer ul.site-social-networks li:before{
+  font-size: 1.3em;
+  line-height: 58px;
+}
+
+.site-footer ul.site-social-networks li:not(:last-child){
+  margin-right: 22px;
 }
