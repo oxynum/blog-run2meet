@@ -10,12 +10,14 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?> post-template-detail" <?php post_class(); ?>>
 	<?php
+		$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
+		echo '<div class="page-bg-head" style="background-image:url('. $larger_image_url[0] .');"></div>';
 	?>
-
+<div class="wrapper">
+	<div class="content-detail">
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
@@ -56,5 +58,8 @@
 		<?php twentyfifteen_entry_meta(); ?>
 		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
+</div>
+<?php get_sidebar( $name ); ?>
+</div>
 
 </article><!-- #post-## -->

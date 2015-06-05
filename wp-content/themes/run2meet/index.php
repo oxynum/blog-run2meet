@@ -85,7 +85,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php
-			
+
 
 			 ?>
 
@@ -100,6 +100,11 @@ get_header(); ?>
 			//$query = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) );
 			// Start the loop.
 			while ( have_posts() ) : the_post();
+
+				if(is_sticky()){
+					echo "";
+				} else  {
+
 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -121,7 +126,7 @@ get_header(); ?>
 				$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
 				$normal_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
 				$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
-				$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+				$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 				$category = get_the_category();
 				if( $value == 'col-1x2') {
 							echo '
@@ -148,7 +153,7 @@ get_header(); ?>
 				} elseif ($value == 'col-2x1') {
 
 					if($news_active !== true) {
-						echo '<div class="col-2x1 col-r2m">
+						echo '<div class="col-2x1 col-r2m '.  $category[0]->slug .'">
 							<div class="image-area">
 							<a href="'. esc_url( get_permalink() ) .'">
 							<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -179,7 +184,7 @@ get_header(); ?>
 				} elseif ($value == 'col-2x1-reverse') {
 
 					if ($news_active !== true) {
-						echo '<div class="col-2x1-reverse col-r2m">
+						echo '<div class="col-2x1-reverse col-r2m '.  $category[0]->slug .'">
 							<div class="text-area">
 								<span class="view-count">';
 								the_views();
@@ -210,10 +215,9 @@ get_header(); ?>
 
 				} elseif ($value == 'col-2x2') {
 					echo '
-					<div class="col-2x2 col-r2m">
-						<div class="image-area">
+					<div class="col-2x2 col-r2m '.  $category[0]->slug .'">
+						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');">
 						<a href="'. esc_url( get_permalink() ) .'">
-							<img src="'. $normal_image_url[0] .'" width="420" height="420" alt="" />
 							<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
                             <span class="image-area-link">Lire la suite</span>
 						</a>
@@ -231,49 +235,40 @@ get_header(); ?>
 
 				} elseif ($value == 'col-3x2') {
 					echo '
-					<div class="col-3x2 col-r2m">
+					<div class="col-3x2 col-r2m '.  $category[0]->slug .'">
 						<div class="text-area">
 						<div class="slick-rotate-legend">
                 <span class="slick-legend">' . get_the_category_list() . '</span>
               </div>
 							<div class="area-layout-text">
 								<h2><a href="'. esc_url( get_permalink() ) .'">'. get_the_title() .'</a></h2>
-								<a href="'. esc_url( get_permalink() ) .'">Lire la suite</a>
+								<a href="'. esc_url( get_permalink() ) .'">
+								<div class="warped">
+	                <span class="w0">L</span><span class="w1">i</span><span class="w2">r</span><span class="w3">e</span><span class="w4"> </span><span class="w5">l</span><span class="w6">a</span><span class="w7"> </span><span class="w8">s</span><span class="w9">u</span><span class="w10">i</span><span class="w11">t</span><span class="w12">e</span>
+	              </div>
+								</a>
 							</div>
 							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
-
-						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');">
-
-						<a href="'. esc_url( get_permalink() ) .'">
-						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-						</a>
-						</div>
+						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');"></div>
 					</div>';
 
 				} elseif ($value == 'col-5x2') {
-					echo '
-					<div class="col-5x2 col-r2m">
+					echo '<div class="col-5x2 col-r2m '.  $category[0]->slug .'">
 						<div class="text-area">
-							<span class="view-count">';
-							the_views();
-					echo '</span>
-							<h2><a href="'. esc_url( get_permalink() ) .'">';
-								the_title();
-					echo '</a></h2>
-							<span class="sep-x"></span>
-							<span class="categorie-list">' . get_the_category_list() . '</span>
+						<div class="slick-rotate-legend">
+                <span class="slick-legend">' . get_the_category_list() . '</span>
+              </div>
+							<div class="area-layout-text">
+								<h2><a href="'. esc_url( get_permalink() ) .'">'. get_the_title() .'</a></h2>
+							</div>
+							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
-						<div class="image-area">
-						<a href="'. esc_url( get_permalink() ) .'">
-						<img src="'. $image_url[0] .'" width="150" height="420" alt="" />
-						<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
-						</a>
-						</div>
+						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');"></div>
 					</div>';
 				} else {
 					echo '
-					<div class="col-2x1 col-r2m">
+					<div class="col-2x1 col-r2m '.  $category[0]->slug .'">
 						<div class="image-area">
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -289,6 +284,8 @@ get_header(); ?>
 
 				}
 				wp_reset_postdata();
+
+			}
 
 
 				// End the loop.

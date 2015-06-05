@@ -1149,6 +1149,11 @@ ul.slick-dots li button:hover{
   font-weight: 700;
   text-transform: uppercase;
 }
+.col-5x2 ul.post-categories li a,
+.col-3x2 ul.post-categories li a {
+  color: #f0f0f0;
+}
+
 .col-r2m h2 a{
   font-weight: 700;
   text-transform: uppercase;
@@ -1188,8 +1193,8 @@ ul.slick-dots li button:hover{
 }
 
 .col-1x2 .image-area {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 54% 100%, 50% 95%, 46% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 54% 100%, 50% 95%, 46% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 101% 0, 101% 100%, 54% 100%, 50% 95%, 46% 100%, 0 100%);
+  clip-path: polygon(0 0, 101% 0, 101% 100%, 54% 100%, 50% 95%, 46% 100%, 0 100%);
 }
 
 .col-2x1 .image-area {
@@ -1204,6 +1209,7 @@ ul.slick-dots li button:hover{
 .col-3x2 .image-area{
   width: 630px;
   height: 420px;
+  background-size: cover;
 }
 
 .col-3x2 .text-area{
@@ -1226,7 +1232,7 @@ ul.slick-dots li button:hover{
   padding: 10px;
   box-sizing: border-box;
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 0;
   right: 0;
 }
@@ -1237,6 +1243,49 @@ ul.slick-dots li button:hover{
   font-size: 3.3em;
   line-height: 1em;
 }
+
+/* 5x2 */
+
+.col-5x2 .image-area{
+  width: 1050px;
+  height: 420px;
+  background-size: cover;
+}
+
+.col-5x2 .text-area{
+  position: absolute;
+  width: 1050px;
+  height: 420px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  color : #fff;
+}
+
+.col-5x2 .text-area .area-layout-text {
+  color: #fff;
+  font-family: 'DINCond-ligth', sans-serif;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+}
+.col-5x2 .text-area a{
+  color: #fff;
+}
+.col-5x2 .text-area h2 a {
+  font-size: 3.3em;
+  line-height: 1em;
+}
+
+
+/**/
 
 .col-2x2 .text-area {
   -webkit-transition: all .3s ease-in-out;
@@ -1400,6 +1449,10 @@ ul.slick-dots li button:hover{
   margin: auto;
 }
 
+.coups-de-coeur .span.slick-legend {
+  margin-left:
+}
+
 /* Footer */
 
 .site-footer{
@@ -1484,4 +1537,97 @@ ul.slick-dots li button:hover{
   font-size: .5em;
   font-family: sans-serif;
   line-height: 50px;
+}
+
+
+/* lire la suite */
+
+.warped {position: relative; display: block; width:184px; height:94px; margin: auto;}
+
+.warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+-moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
+100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+
+.warped span{font-family:'Raleway';font-size:13px;font-weight:100;font-style:normal;
+line-height:0.55; white-space:pre; overflow:visible; padding:0px;}
+
+.warped .w0 {-moz-transform: rotate(6.79rad);-webkit-transform: rotate(6.79rad);-o-transform:
+rotate(6.79rad);-ms-transform: rotate(6.79rad); transform: rotate(6.79rad);
+width: 8px; height: 7px; left: 52.09px; top: 52.36px;}
+
+.warped .w1 {-moz-transform: rotate(6.7rad);-webkit-transform: rotate(6.7rad);-o-transform:
+rotate(6.7rad);-ms-transform: rotate(6.7rad); transform: rotate(6.7rad);
+width: 2px; height: 7px; left: 60.44px; top: 55.07px;}
+
+.warped .w2 {-moz-transform: rotate(6.64rad);-webkit-transform: rotate(6.64rad);-o-transform:
+rotate(6.64rad);-ms-transform: rotate(6.64rad); transform: rotate(6.64rad);
+width: 4px; height: 7px; left: 63.13px; top: 56.6px;}
+
+.warped .w3 {-moz-transform: rotate(6.54rad);-webkit-transform: rotate(6.54rad);-o-transform:
+rotate(6.54rad);-ms-transform: rotate(6.54rad); transform: rotate(6.54rad);
+width: 8px; height: 7px; left: 67.79px; top: 58.75px;}
+
+.warped .w4 {-moz-transform: rotate(6.43rad);-webkit-transform: rotate(6.43rad);-o-transform:
+rotate(6.43rad);-ms-transform: rotate(6.43rad); transform: rotate(6.43rad);
+width: 4px; height: 7px; left: 76.64px; top: 60.19px;}
+
+.warped .w5 {-moz-transform: rotate(6.37rad);-webkit-transform: rotate(6.37rad);-o-transform:
+rotate(6.37rad);-ms-transform: rotate(6.37rad); transform: rotate(6.37rad);
+width: 3px; height: 7px; left: 81.61px; top: 60.74px;}
+
+.warped .w6 {-moz-transform: rotate(6.28rad);-webkit-transform: rotate(6.28rad);-o-transform:
+rotate(6.28rad);-ms-transform: rotate(6.28rad); transform: rotate(6.28rad);
+width: 7px; height: 7px; left: 85.6px; top: 60.99px;}
+
+.warped .w7 {-moz-transform: rotate(6.18rad);-webkit-transform: rotate(6.18rad);-o-transform:
+rotate(6.18rad);-ms-transform: rotate(6.18rad); transform: rotate(6.18rad);
+width: 4px; height: 7px; left: 93.59px; top: 60.67px;}
+
+.warped .w8 {-moz-transform: rotate(6.09rad);-webkit-transform: rotate(6.09rad);-o-transform:
+rotate(6.09rad);-ms-transform: rotate(6.09rad); transform: rotate(6.09rad);
+width: 6px; height: 7px; left: 98.52px; top: 59.81px;}
+
+.warped .w9 {-moz-transform: rotate(5.98rad);-webkit-transform: rotate(5.98rad);-o-transform:
+rotate(5.98rad);-ms-transform: rotate(5.98rad); transform: rotate(5.98rad);
+width: 7px; height: 7px; left: 105.3px; top: 58px;}
+
+.warped .w10 {-moz-transform: rotate(5.9rad);-webkit-transform: rotate(5.9rad);-o-transform:
+rotate(5.9rad);-ms-transform: rotate(5.9rad); transform: rotate(5.9rad);
+width: 2px; height: 7px; left: 112.98px; top: 56.16px;}
+
+.warped .w11 {-moz-transform: rotate(5.84rad);-webkit-transform: rotate(5.84rad);-o-transform:
+rotate(5.84rad);-ms-transform: rotate(5.84rad); transform: rotate(5.84rad);
+width: 4px; height: 7px; left: 115.64px; top: 54.56px;}
+
+.warped .w12 {-moz-transform: rotate(5.73rad);-webkit-transform: rotate(5.73rad);-o-transform:
+rotate(5.73rad);-ms-transform: rotate(5.73rad); transform: rotate(5.73rad);
+width: 8px; height: 7px; left: 119.8px; top: 51.24px;}
+
+/* page */
+
+.page-bg-head {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+}
+
+.type-post .entry-header h1{
+  font-size: 4em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1em;
+}
+
+.content-detail {
+  width: 805px;
+  float: left;
+  background: #fff;
+  padding: 30px;
+}
+.secondary {
+  width: 235px;
+  float: right;
 }

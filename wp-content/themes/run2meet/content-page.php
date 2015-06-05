@@ -10,8 +10,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
+		$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
+		echo '<div class="page-bg-head" style="background-image:url('. $larger_image_url[0] .');"></div>';
 	?>
 
 	<header class="entry-header">
