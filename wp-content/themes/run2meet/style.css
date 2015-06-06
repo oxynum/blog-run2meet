@@ -863,10 +863,34 @@ button.submit {
   text-transform: uppercase;
   height: 30px;
 }
-.nav-main ul li a:hover {
+.nav-main ul li:first-child a:hover {
   -webkit-box-shadow: inset 0px -5px 0px -3px rgba(243,156,18,1);
   -moz-box-shadow: inset 0px -5px 0px -3px rgba(243,156,18,1);
   box-shadow: inset 0px -5px 0px -3px rgba(243,156,18,1);
+}
+
+.nav-main ul li:nth-child(2) a:hover {
+  -webkit-box-shadow: inset 0px -5px 0px -3px rgba(59,154,217,1);
+  -moz-box-shadow: inset 0px -5px 0px -3px rgba(59,154,217,1);
+  box-shadow: inset 0px -5px 0px -3px rgba(59,154,217,1);
+}
+
+.nav-main ul li:nth-child(3) a:hover {
+  -webkit-box-shadow: inset 0px -5px 0px -3px rgba(152,93,180,1);
+  -moz-box-shadow: inset 0px -5px 0px -3px rgba(152,93,180,1);
+  box-shadow: inset 0px -5px 0px -3px rgba(152,93,180,1);
+}
+
+.nav-main ul li:nth-child(4) a:hover {
+  -webkit-box-shadow: inset 0px -5px 0px -3px rgba(197,0,107,1);
+  -moz-box-shadow: inset 0px -5px 0px -3px rgba(197,0,107,1);
+  box-shadow: inset 0px -5px 0px -3px rgba(197,0,107,1);
+}
+
+.nav-main ul li:last-child a:hover {
+  -webkit-box-shadow: inset 0px -5px 0px -3px rgba(246,114,128,1);
+  -moz-box-shadow: inset 0px -5px 0px -3px rgba(246,114,128,1);
+  box-shadow: inset 0px -5px 0px -3px rgba(246,114,128,1);
 }
 
 /* Header */
@@ -1170,8 +1194,25 @@ ul.slick-dots li button:hover{
   font-weight: 700;
   text-transform: uppercase;
 }
-.col-5x2 ul.post-categories li a,
-.col-3x2 ul.post-categories li a {
+
+.col-r2m.cest-sport ul.post-categories li a{
+  color: #f67280;
+}
+.col-r2m.coaching-rencontre ul.post-categories li a{
+  color: #3b9ad9;
+}
+.col-r2m.vestiaire-des-news ul.post-categories li a{
+  color: #985db4;
+}
+.col-r2m.coups-de-coeur ul.post-categories li a{
+  color: #c5006b;
+}
+.col-r2m.nutrition-sante ul.post-categories li a{
+  color: #f39c12;
+}
+
+.col-5x2.col-r2m ul.post-categories li a,
+.col-3x2.col-r2m ul.post-categories li a {
   color: #f0f0f0;
 }
 
@@ -1314,7 +1355,7 @@ ul.slick-dots li button:hover{
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: 0;
-  top: 0;
+  top: 100%;
 }
 
 .col-2x2 .text-area span.view-count{
@@ -1331,7 +1372,7 @@ ul.slick-dots li button:hover{
 
 .col-r2m.col-2x2 .image-area:hover .text-area{
   opacity: 1;
-  top: -100%;
+  top: 0;
 }
 
 .col-2x2 .image-area {
@@ -1655,9 +1696,9 @@ ul.slick-dots li button:hover{
 }
 
 .menu-footer-container ul li a:hover {
-  -webkit-box-shadow: inset 0px 5px 0px -2px #fff;
-  -moz-box-shadow: inset 0px 5px 0px -2px #fff;
-  box-shadow: inset 0px 5px 0px -2px #fff;
+  -webkit-box-shadow: inset 0px 5px 0px -2px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px 5px 0px -2px rgba(255,255,255,1);
+  box-shadow: inset 0px 5px 0px -2px rgba(255,255,255,1);
 }
 
 /* Pagination */
