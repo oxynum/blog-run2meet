@@ -19,12 +19,24 @@
 			  <img src="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png" alt="Logo Run2meet" />
 			</a>
 			<ul class="site-social-networks">
-              <li class="facebook icon-facebook-footer"></li>
-		      <li class="twitter icon-twitter-footer"></li>
-		      <li class="instagram icon-instagram-footer"></li>
-		      <li class="googleplus icon-gplus-footer"></li>
-		      <li class="mail icon-mail-footer"></li>
+              <a href="https://facebook.com/run2meetfrance" target="_blank">
+                <li class="facebook icon-facebook-footer"></li>
+              </a>
+              <a href="https://twitter.com/Run2meetfrance" target="_blank">
+		        <li class="twitter icon-twitter-footer"></li>
+              </a>
+              <a href="https://instagram.com/run2meet" target="_blank">
+		        <li class="instagram icon-instagram-footer"></li>
+              </a>
+              <a href="https://plus.google.com/+RunMeet/" target="_blank">
+		        <li class="googleplus icon-gplus-footer"></li>
+              </a>
+              <a href="mailto:contact@run2meet.fr">
+		        <li class="mail icon-mail-footer"></li>
+              </a>
 		    </ul>
+		    <?php echo do_shortcode('[mc4wp_form]'); ?>
+           <?php wp_nav_menu( array('menu' => 'Footer' )); ?>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 

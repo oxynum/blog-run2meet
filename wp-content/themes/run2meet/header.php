@@ -35,14 +35,20 @@
 					<?php endif;
 				?>
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-				<!-- <div class="social-icon">
-				 <ul>
-					<li><a href="" class="fb">Facebook</a></li>
-					<li><a href="" class="ig">Instagram</a></li>
-					<li><a href="" class="tw">Twitter</a></li>
-					<li><a href="" class="gp">Google +</a></li>
-				</ul>
-				</div> -->
+				  <ul class="social-icon">
+				    <a href="https://facebook.com/run2meetfrance" target="_blank">
+                      <li class="facebook icon-facebook-footer"></li>
+                    </a>
+                    <a href="https://twitter.com/Run2meetfrance" target="_blank">
+		              <li class="twitter icon-twitter-footer"></li>
+                    </a>
+                    <a href="https://instagram.com/run2meet" target="_blank">
+		              <li class="instagram icon-instagram-footer"></li>
+                    </a>
+                    <a href="https://plus.google.com/+RunMeet/" target="_blank">
+		              <li class="googleplus icon-gplus-footer"></li>
+                    </a>
+				  </ul>
 				<div class="connexion">
 					<button class="submit">Aller sur <strong>Run2meet.fr</strong></button>
 				</div>
