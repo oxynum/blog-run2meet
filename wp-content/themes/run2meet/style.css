@@ -1502,6 +1502,7 @@ ul.slick-dots li button:hover{
   top: 30px;
   list-style: none;
   margin: 0;
+  z-index: 10;
 }
 
 .site-footer ul.site-social-networks a{
