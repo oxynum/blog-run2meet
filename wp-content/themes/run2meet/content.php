@@ -14,10 +14,20 @@
 	<?php
 		$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 		// Post thumbnail.
-		echo '<div class="page-bg-head" style="background-image:url('. $larger_image_url[0] .');"></div>';
+		echo '<div class="page-bg-head" style="background-image:url('. $larger_image_url[0] .');background-position: center '.get_field('image_slider_position').'px;"></div>';
 	?>
-<div class="wrapper">
+
+<div class="wrapper clearfix">
 	<div class="content-detail">
+			<div class="author-detail">
+			<?php
+				$avatar = md5(get_the_author_meta('user_email'));
+				if($avatar) {
+					echo '<div class="pics-avatar"><img src="http://www.gravatar.com/avatar/'. $avatar .'?d=mm" class="avatar-wp" width="60" height="60" /></div>';
+				}
+			?>
+			<span>Par <strong><?php the_author_posts_link(); ?></strong></span>
+		 </div>
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
@@ -27,6 +37,9 @@
 			endif;
 		?>
 	</header><!-- .entry-header -->
+	<p class="the-exerpt">
+		<?php echo get_the_excerpt(); ?>
+	</p>
 
 	<div class="entry-content">
 		<?php

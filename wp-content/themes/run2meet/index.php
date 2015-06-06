@@ -28,6 +28,7 @@ get_header(); ?>
 				$query_sticky = new WP_Query( $args_sticky );
 			  while ($query_sticky->have_posts()) : $query_sticky->the_post();
 			    if ( is_sticky() ) :
+
 						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 						echo '<div class="slick-slide" style="background-image:url(' . $large_image_url[0] . '); background-position: center '.get_field('image_slider_position').'px;"></div>';
 						wp_reset_postdata();
@@ -106,31 +107,41 @@ get_header(); ?>
 				} else  {
 
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				$value = get_field( "column_type" );
-				$news_active = get_field( "newsletter_article" );
 
-				/*
-				 * col-1x2 : 1 colonnes, 2 lignes
-				 * col-2x1 : 2 colonnes, 1 ligne
-				 * col-2x1-reverse : 2 colonnes, 1 ligne, photo inverse
-				 * col-2x2 : 2 colonnes, 2 lignes
-				 * col-3x2 : 3 colonnes, 2 lignes
-				 * col-5x2 : 5 colonnes, 2 lignes
-				 */
+									/*
+									 * Include the Post-Format-specific template for the content.
+									 * If you want to override this in a child theme, then include a file
+									 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+									 */
+									$value = get_field( "column_type" );
+									$news_active = get_field( "newsletter_article" );
 
-				$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
-				$normal_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
-				$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
-				$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-				$category = get_the_category();
+									/*
+									 * col-1x2 : 1 colonnes, 2 lignes
+									 * col-2x1 : 2 colonnes, 1 ligne
+									 * col-2x1-reverse : 2 colonnes, 1 ligne, photo inverse
+									 * col-2x2 : 2 colonnes, 2 lignes
+									 * col-3x2 : 3 colonnes, 2 lignes
+									 * col-5x2 : 5 colonnes, 2 lignes
+									 */
+
+									$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+									$normal_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+									$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+									$full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+									$category = get_the_category();
+
+					if(get_post_format() == 'chat') {
+						echo '<div class="col-2x1 col-r2m chat-module '.  $category[0]->slug .' '. get_post_format() .'"><div class="relative">';
+						echo '<h2>- Run2meet</h2>';
+							the_content();
+							echo '<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>';
+							echo '</div></div>';
+					} else {
+
 				if( $value == 'col-1x2') {
 							echo '
-							<div class="col-1x2 col-r2m '.  $category[0]->slug .'">
+							<div class="col-1x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
 								<div class="image-area">
 								<a href="'. esc_url( get_permalink() ) .'">
 								<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -153,7 +164,7 @@ get_header(); ?>
 				} elseif ($value == 'col-2x1') {
 
 					if($news_active !== true) {
-						echo '<div class="col-2x1 col-r2m '.  $category[0]->slug .'">
+						echo '<div class="col-2x1 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
 							<div class="image-area">
 							<a href="'. esc_url( get_permalink() ) .'">
 							<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -171,6 +182,7 @@ get_header(); ?>
 						</div>';
 					}	else {
 							echo '<div class="col-2x1 col-r2m">
+										<div class="relative">
 											<div class="newsletter-active-bloc">
 											<div class="slick-rotate-legend">
 													<span class="slick-legend">Newsletter</span>
@@ -178,13 +190,14 @@ get_header(); ?>
 											<h2>'.get_the_title().'</h2>';
 											the_content();
 							echo '</div>
+								</div>
 							</div>';
 					}
 
 				} elseif ($value == 'col-2x1-reverse') {
 
 					if ($news_active !== true) {
-						echo '<div class="col-2x1-reverse col-r2m '.  $category[0]->slug .'">
+						echo '<div class="col-2x1-reverse col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
 							<div class="text-area">
 								<span class="view-count">';
 								the_views();
@@ -215,7 +228,7 @@ get_header(); ?>
 
 				} elseif ($value == 'col-2x2') {
 					echo '
-					<div class="col-2x2 col-r2m '.  $category[0]->slug .'">
+					<div class="col-2x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
 						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');">
 						<a href="'. esc_url( get_permalink() ) .'">
 							<span class="plus"><span class="horizontal"></span><span class="vertical"></span></span>
@@ -235,7 +248,8 @@ get_header(); ?>
 
 				} elseif ($value == 'col-3x2') {
 					echo '
-					<div class="col-3x2 col-r2m '.  $category[0]->slug .'">
+					<div class="col-3x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
+					<div class="relative">
 						<div class="text-area">
 						<div class="slick-rotate-legend">
                 <span class="slick-legend">' . get_the_category_list() . '</span>
@@ -251,10 +265,12 @@ get_header(); ?>
 							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
 						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');"></div>
+						</div>
 					</div>';
 
 				} elseif ($value == 'col-5x2') {
-					echo '<div class="col-5x2 col-r2m '.  $category[0]->slug .'">
+					echo '<div class="col-5x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
+					<div class="relative">
 						<div class="text-area">
 						<div class="slick-rotate-legend">
                 <span class="slick-legend">' . get_the_category_list() . '</span>
@@ -265,10 +281,11 @@ get_header(); ?>
 							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
 						<div class="image-area" style="background-image:url(' . $larger_image_url[0] . ');"></div>
+						</div>
 					</div>';
 				} else {
 					echo '
-					<div class="col-2x1 col-r2m '.  $category[0]->slug .'">
+					<div class="col-2x1 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
 						<div class="image-area">
 						<a href="'. esc_url( get_permalink() ) .'">
 						<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -283,6 +300,8 @@ get_header(); ?>
 					</div>';
 
 				}
+
+			}
 				wp_reset_postdata();
 
 			}

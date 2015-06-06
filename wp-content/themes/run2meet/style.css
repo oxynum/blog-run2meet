@@ -1273,6 +1273,12 @@ ul.slick-dots li button:hover{
   height: 420px;
   background-size: cover;
 }
+.relative {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
 
 .col-3x2 .text-area{
   position: absolute;
@@ -1809,6 +1815,14 @@ ul.slick-dots li button:hover{
   height: 250px;
   width: 100%;
   background-size: cover;
+  -webkit-transition: height .3s; /* Safari */
+  transition: height .3s;
+}
+
+.page-bg-head:hover {
+  height: 500px;
+  -webkit-transition: height .3s; /* Safari */
+  transition: height .3s;
 }
 
 .type-post .entry-header h1{
@@ -1819,15 +1833,203 @@ ul.slick-dots li button:hover{
   font-weight: 900;
   letter-spacing: -0.02em;
   line-height: 1em;
+  margin-bottom: 30px;
 }
 
 .content-detail {
   width: 805px;
   float: left;
   background: #fff;
-  padding: 30px;
+  padding: 100px 30px 30px;
+  position: relative;
 }
 .secondary {
   width: 235px;
   float: right;
+}
+
+.the-exerpt {
+  font-style: italic;
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Merriweather', serif;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 45px;
+}
+
+.site .entry-content {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  text-align: justify;;
+}
+.site .entry-content ul {
+  padding: 0;
+  margin: 0;
+}
+.site .entry-content ul li{
+  display: block;
+  margin-bottom: 20px;
+  list-style: circle;
+
+}
+.site .entry-content h3, .site .entry-content h2 {
+  color: #d60180;
+  text-transform: uppercase;
+}
+
+
+.site .entry-content ul li:before,
+.site .entry-content ul li:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.site .entry-content ul li:after {
+  clear: both;
+}
+.site .entry-content::first-letter{
+  font-size: 4em;
+  float: left;
+  font-weight: bold;
+  color: #d60180;
+  margin-top: -40px;
+  margin-right: 20px;
+}
+
+.author-detail {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+}
+.author-detail .pics-avatar {
+  width: 60px;
+  margin: 0 auto 10px;
+  height: 60px;
+}
+.alignright {
+  float: right;
+  margin: 20px 0 20px 30px;
+}
+.alignleft {
+  float: right;
+  margin: 20px 30px 20px 0px;
+}
+.author-detail .pics-avatar .avatar-wp {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+img.full {
+  width: 100%;
+  display: block;
+}
+a.full img {
+  width: 100%;
+  display: block;
+}
+.single article {
+  background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(51%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+/* chat module facebook*/
+.chat.col-r2m {
+  color: #fff;
+  background: #3B5998;
+}
+
+.chat .cff-wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.chat .cff-post-text {
+  text-align: center;
+}
+.chat .cff-post-text a {
+  color: #fff;
+}
+.chat .fb-like {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -30px;
+  right: 0;
+}
+.chat h2{
+  font-weight: 100;
+  padding: 20px;
+}
+.chat .cff-wrapper {
+  position: absolute;
+  top: 35%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.chat .cff-wrapper #cff .cff-item {
+  display: inline-block;
+}
+
+.chat .cff-shared-link, .chat .cff-post-links, .chat .cff-author, .widget .cff-post-links {
+  display: none;
+}
+.widget {
+  margin-top: 20px;
+}
+.widget .cff-wrapper {
+  background: #fff;
+  padding: 10px 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+}
+
+/* sidebar */
+
+.secondary {
+    font-family: 'Raleway', sans-serif;
+}
+
+.recent-posts-widget-with-thumbnails .widget-title {
+
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+  color: #d60180;
+}
+.recent-posts-widget-with-thumbnails ul {
+  padding: 0;
+  margin: 0;
+}
+.recent-posts-widget-with-thumbnails ul li {
+  list-style: none;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 20px;
+}
+.recent-posts-widget-with-thumbnails .rpwwt-post-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .9em;
 }

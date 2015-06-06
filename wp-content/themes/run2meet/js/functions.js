@@ -186,4 +186,25 @@
     columnWidth: 210
   });
 
+  var $container = $('.grid-r2m');
+
+  $container.infinitescroll({
+    navSelector  : '.navigation',    // selector for the paged navigation
+    nextSelector : '.navigation a.next',  // selector for the NEXT link (to page 2)
+    itemSelector : '.col-r2m',     // selector for all items you'll retrieve
+    loading: {
+        finishedMsg: 'C\'est tout',
+        img: 'http://i.imgur.com/6RMhx.gif'
+      }
+      },
+  // trigger Masonry as a callback
+  function( newElements ) {
+    var $newElems = $( newElements ).css({ opacity: 0 });
+      // show elems now they're ready
+    $newElems.animate({ opacity: 1 });
+    $container.masonry( 'appended', $newElems, true  );
+  });
+
+
+
 } )( jQuery );

@@ -230,7 +230,7 @@ function twentyfifteen_scripts() {
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.2' );
 
 	// main google font
-	wp_enqueue_style( 'raleway', 'http://fonts.googleapis.com/css?family=Raleway:500,700,800', array(), '20141010' );
+	wp_enqueue_style( 'googlefont', 'http://fonts.googleapis.com/css?family=Raleway:500,700,800|Merriweather:400,400italic,300italic,300,700,700italic', array(), '20141010' );
 
 	// Load our main stylesheet.
 	wp_enqueue_style( 'twentyfifteen-style', get_stylesheet_uri() );
@@ -257,10 +257,11 @@ function twentyfifteen_scripts() {
 	}
 
 	// load masonry + infinitescroll
-	if ( is_home()) {
+	if ( is_home() || is_category() || is_archive()) {
 		wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.min.js', array( 'jquery' ), '20150330' );
 		wp_enqueue_script( 'infinitescroll', get_template_directory_uri() . '/js/infinite-scroll.js', array( 'jquery' ), '20150330' );
 	}
+
 
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '20150330', true );
 
