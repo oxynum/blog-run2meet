@@ -21,9 +21,9 @@ get_header(); ?>
 			<?php
 			if (have_posts()) {
 				$args_sticky = array(
-					'posts_per_page' => 3,
+					'posts_per_page' => 5,
 					'post__in'  => get_option( 'sticky_posts' ),
-					'ignore_sticky_posts' => 3
+					'ignore_sticky_posts' => 5
 				);
 				$query_sticky = new WP_Query( $args_sticky );
 			  while ($query_sticky->have_posts()) : $query_sticky->the_post();
