@@ -848,7 +848,7 @@ button.submit,.connexion a.submit {
   left: 0;
 }
 
-.stamp.col-2x1 {
+.stamp.col-2x1, .stamp.col-2x1-reverse {
   left: 210px;
 }
 
