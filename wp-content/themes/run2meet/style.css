@@ -4,10 +4,10 @@ Theme URI: https://www.run2meet.com
 Author: Oxynum X Run2meet Team
 Author URI: http://www.oxynum.fr
 Description: 2015 theme for the Run2meet blog.
-Version: 0.1
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Tags: white, pink, purple, yellow, light, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 Text Domain: run2meet
 
 This theme, like WordPress, is licensed under the GPL.
@@ -1871,24 +1871,31 @@ ul.slick-dots li button:hover{
 .site .entry-content ul li{
   display: block;
   margin-bottom: 20px;
-  list-style: circle;
-
+  list-style-type: disc;
 }
+
+.site .entry-content ul li li{
+  display: block;
+  margin-bottom: 20px;
+  list-style-type: '-';
+}
+
 .site .entry-content h3, .site .entry-content h2 {
   color: #d60180;
   text-transform: uppercase;
 }
 
 
-.site .entry-content ul li:before,
+/* .site .entry-content ul li:before,
 .site .entry-content ul li:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
+  content: " "; 1
+  display: table; 2
+} */
 
-.site .entry-content ul li:after {
+/* .site .entry-content ul li:after {
   clear: both;
-}
+} */
+
 .site .entry-content::first-letter{
   font-size: 4em;
   float: left;
@@ -1924,6 +1931,7 @@ ul.slick-dots li button:hover{
 .aligncenter {
   text-align: center;
   margin: auto;
+  display: block;
 }
 .author-detail .pics-avatar .avatar-wp {
   -webkit-border-radius: 50%;
