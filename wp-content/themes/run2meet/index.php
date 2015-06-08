@@ -106,6 +106,13 @@ get_header(); ?>
 					echo "";
 				} else  {
 
+					if(get_field('remonter_1')) {
+						$taglist = ' stamp stamp-1';
+					} elseif (get_field('remonter_2')) {
+						$taglist = ' stamp stamp-2';
+					} else {
+						$taglist = ' special';
+					}
 
 
 									/*
@@ -141,7 +148,7 @@ get_header(); ?>
 
 				if( $value == 'col-1x2') {
 							echo '
-							<div class="col-1x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
+							<div class="col-1x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .' '. $taglist .'">
 								<div class="image-area">
 								<a href="'. esc_url( get_permalink() ) .'">
 								<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -164,7 +171,7 @@ get_header(); ?>
 				} elseif ($value == 'col-2x1') {
 
 					if($news_active !== true) {
-						echo '<div class="col-2x1 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
+						echo '<div class="col-2x1 col-r2m '.  $category[0]->slug .' '. get_post_format() .' '. $taglist .'">
 							<div class="image-area">
 							<a href="'. esc_url( get_permalink() ) .'">
 							<img src="'. $image_url[0] .'" width="210" height="210" alt="" />
@@ -197,7 +204,7 @@ get_header(); ?>
 				} elseif ($value == 'col-2x1-reverse') {
 
 					if ($news_active !== true) {
-						echo '<div class="col-2x1-reverse col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
+						echo '<div class="col-2x1-reverse col-r2m '.  $category[0]->slug .' '. get_post_format() .' '. $taglist .'">
 							<div class="text-area">
 								<span class="view-count">';
 								the_views();

@@ -183,7 +183,8 @@
   // Masonry init config with jQuery
   $('.grid-r2m').masonry({
     itemSelector: '.col-r2m',
-    columnWidth: 210
+    columnWidth: 210, 
+    stamp: '.stamp',
   });
 
   var $container = $('.grid-r2m');

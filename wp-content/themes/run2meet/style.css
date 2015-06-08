@@ -836,6 +836,26 @@ button.submit,.connexion a.submit {
   color: #fff;
 }
 
+.stamp {
+  position: absolute !important;
+}
+
+.stamp-1 {
+  top: -210px !important;
+}
+
+.stamp.col-1x2 {
+  left: 0;
+}
+
+.stamp.col-2x1 {
+  left: 210px;
+}
+
+.stamp-2 {
+  top: -210px !important;
+}
+
 .connexion {
   width: 300px;
   text-align: right;
