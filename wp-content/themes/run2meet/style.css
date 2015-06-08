@@ -1865,18 +1865,12 @@ ul.slick-dots li button:hover{
   text-align: justify;;
 }
 .site .entry-content ul {
-  padding: 0;
-  margin: 0;
 }
 .site .entry-content ul li{
-  display: block;
-  margin-bottom: 20px;
   list-style-type: disc;
 }
 
 .site .entry-content ul li li{
-  display: block;
-  margin-bottom: 20px;
   list-style-type: '-';
 }
 
