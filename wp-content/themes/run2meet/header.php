@@ -57,7 +57,7 @@
                     </a>
 				  </ul>
 				<div class="connexion">
-					<button class="submit">Aller sur <strong>Run2meet.fr</strong></button>
+					<a class="submit" href="https://www.run2meet.fr">Aller sur <strong>Run2meet.fr</strong></a>
 				</div>
 			</div><!-- .site-branding -->
 			<nav class="nav-main">

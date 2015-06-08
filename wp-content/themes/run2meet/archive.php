@@ -74,7 +74,7 @@ get_header(); ?>
 						echo '<div class="col-2x1 col-r2m chat-module '.  $category[0]->slug .' '. get_post_format() .'"><div class="relative">';
 						echo '<h2>- Run2meet</h2>';
 							the_content();
-							echo '<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>';
+							echo '<div class="fb-like" data-href="https://www.facebook.com/run2meetfrance?_rdr" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>';
 							echo '</div></div>';
 					} else {
 

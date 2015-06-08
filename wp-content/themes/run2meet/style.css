@@ -815,9 +815,18 @@ ul.social-icon a:not(:last-child){
 ul.social-icon a li:before{
   font-size: 1.1em;
 }
+.connexion a.submit {
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 0.5em 2.5em;
+}
 
-
-button.submit {
+button.submit,.connexion a.submit {
   background-color: #ea148c;
   border-radius: 2px;
   -webkit-box-shadow: 0px 1px 1px 0px rgba(123,18,74,1);
@@ -826,6 +835,7 @@ button.submit {
   font-weight: normal;
   color: #fff;
 }
+
 .connexion {
   width: 300px;
   text-align: right;
