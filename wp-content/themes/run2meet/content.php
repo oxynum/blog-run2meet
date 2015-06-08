@@ -12,7 +12,7 @@
 
 <article id="post-<?php the_ID(); ?> post-template-detail" <?php post_class(); ?>>
 	<?php
-		$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+		$larger_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 		// Post thumbnail.
 		echo '<div class="page-bg-head" style="background-image:url('. $larger_image_url[0] .');background-position: center '.get_field('image_slider_position').'px;"></div>';
 	?>
