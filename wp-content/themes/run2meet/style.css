@@ -1806,7 +1806,7 @@ ul.slick-dots li button:hover{
 
 /* lire la suite */
 
-.warped {position: relative; display: block; width:184px; height:94px; margin: auto;
+.warped {position: relative; display: block; width:184px; height:134px; margin: auto;
   background: url('img/ellispis-icon.png') no-repeat center bottom;
 }
 
@@ -1819,55 +1819,55 @@ ul.slick-dots li button:hover{
 
 .warped .w0 {-moz-transform: rotate(6.79rad);-webkit-transform: rotate(6.79rad);-o-transform:
   rotate(6.79rad);-ms-transform: rotate(6.79rad); transform: rotate(6.79rad);
-  width: 8px; height: 7px; left: 52.09px; top: 52.36px;}
+  width: 8px; height: 7px; left: 52.09px; top: 92.36px;}
 
 .warped .w1 {-moz-transform: rotate(6.7rad);-webkit-transform: rotate(6.7rad);-o-transform:
   rotate(6.7rad);-ms-transform: rotate(6.7rad); transform: rotate(6.7rad);
-  width: 2px; height: 7px; left: 60.44px; top: 55.07px;}
+  width: 2px; height: 7px; left: 60.44px; top: 95.07px;}
 
 .warped .w2 {-moz-transform: rotate(6.64rad);-webkit-transform: rotate(6.64rad);-o-transform:
   rotate(6.64rad);-ms-transform: rotate(6.64rad); transform: rotate(6.64rad);
-  width: 4px; height: 7px; left: 63.13px; top: 56.6px;}
+  width: 4px; height: 7px; left: 63.13px; top: 96.6px;}
 
 .warped .w3 {-moz-transform: rotate(6.54rad);-webkit-transform: rotate(6.54rad);-o-transform:
   rotate(6.54rad);-ms-transform: rotate(6.54rad); transform: rotate(6.54rad);
-  width: 8px; height: 7px; left: 67.79px; top: 58.75px;}
+  width: 8px; height: 7px; left: 67.79px; top: 98.75px;}
 
 .warped .w4 {-moz-transform: rotate(6.43rad);-webkit-transform: rotate(6.43rad);-o-transform:
   rotate(6.43rad);-ms-transform: rotate(6.43rad); transform: rotate(6.43rad);
-  width: 4px; height: 7px; left: 76.64px; top: 60.19px;}
+  width: 4px; height: 7px; left: 76.64px; top: 100.19px;}
 
 .warped .w5 {-moz-transform: rotate(6.37rad);-webkit-transform: rotate(6.37rad);-o-transform:
   rotate(6.37rad);-ms-transform: rotate(6.37rad); transform: rotate(6.37rad);
-  width: 3px; height: 7px; left: 81.61px; top: 60.74px;}
+  width: 3px; height: 7px; left: 81.61px; top: 100.74px;}
 
 .warped .w6 {-moz-transform: rotate(6.28rad);-webkit-transform: rotate(6.28rad);-o-transform:
   rotate(6.28rad);-ms-transform: rotate(6.28rad); transform: rotate(6.28rad);
-  width: 7px; height: 7px; left: 85.6px; top: 60.99px;}
+  width: 7px; height: 7px; left: 85.6px; top: 100.99px;}
 
 .warped .w7 {-moz-transform: rotate(6.18rad);-webkit-transform: rotate(6.18rad);-o-transform:
   rotate(6.18rad);-ms-transform: rotate(6.18rad); transform: rotate(6.18rad);
-  width: 4px; height: 7px; left: 93.59px; top: 60.67px;}
+  width: 4px; height: 7px; left: 93.59px; top:100.67px;}
 
 .warped .w8 {-moz-transform: rotate(6.09rad);-webkit-transform: rotate(6.09rad);-o-transform:
   rotate(6.09rad);-ms-transform: rotate(6.09rad); transform: rotate(6.09rad);
-  width: 6px; height: 7px; left: 98.52px; top: 59.81px;}
+  width: 6px; height: 7px; left: 98.52px; top: 99.81px;}
 
 .warped .w9 {-moz-transform: rotate(5.98rad);-webkit-transform: rotate(5.98rad);-o-transform:
   rotate(5.98rad);-ms-transform: rotate(5.98rad); transform: rotate(5.98rad);
-  width: 7px; height: 7px; left: 105.3px; top: 58px;}
+  width: 7px; height: 7px; left: 105.3px; top: 98px;}
 
 .warped .w10 {-moz-transform: rotate(5.9rad);-webkit-transform: rotate(5.9rad);-o-transform:
   rotate(5.9rad);-ms-transform: rotate(5.9rad); transform: rotate(5.9rad);
-  width: 2px; height: 7px; left: 112.98px; top: 56.16px;}
+  width: 2px; height: 7px; left: 112.98px; top: 96.16px;}
 
 .warped .w11 {-moz-transform: rotate(5.84rad);-webkit-transform: rotate(5.84rad);-o-transform:
   rotate(5.84rad);-ms-transform: rotate(5.84rad); transform: rotate(5.84rad);
-  width: 4px; height: 7px; left: 115.64px; top: 54.56px;}
+  width: 4px; height: 7px; left: 115.64px; top: 94.56px;}
 
 .warped .w12 {-moz-transform: rotate(5.73rad);-webkit-transform: rotate(5.73rad);-o-transform:
   rotate(5.73rad);-ms-transform: rotate(5.73rad); transform: rotate(5.73rad);
-  width: 8px; height: 7px; left: 119.8px; top: 51.24px;}
+  width: 8px; height: 7px; left: 119.8px; top: 91.24px;}
 
 /* page */
 
@@ -2222,7 +2222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', end
 }
 
 @media only screen
-and (max-device-width : 667px) {
+and (max-width : 667px) {
   body .col-r2m {
     width: 100%;
     display: block;
