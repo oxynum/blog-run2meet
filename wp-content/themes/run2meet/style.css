@@ -1786,7 +1786,6 @@ ul.slick-dots li button:hover{
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #dc359b;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1798,6 +1797,10 @@ ul.slick-dots li button:hover{
   font-size: .5em;
   font-family: sans-serif;
   line-height: 50px;
+  background: url('img/load-more.png') no-repeat center center;
+  text-indent: -1000em;
+  outline: none;
+  overflow: hidden;
 }
 
 
