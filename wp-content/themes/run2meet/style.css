@@ -988,6 +988,16 @@ span.slick-legend{
   padding: 0 10px;
   transform: skewX(-10deg);
 }
+span.slick-icon-legend{
+  background: url('img/heart-icon.png') no-repeat center top transparent;
+  width: 100px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  margin-left: -50px;
+}
 
 .col-r2m span.slick-legend ul li a {
   color: #fff;
@@ -1003,6 +1013,13 @@ span.slick-legend{
   transform: rotate(-10deg);
 }
 
+.facebook-icon-chat {
+  width: 35px;
+  height: 35px;
+  background: url('img/fb-icon.png') no-repeat center top transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .slick-rotate-legend{
   display: table;
@@ -1546,9 +1563,17 @@ ul.slick-dots li button:hover{
   width: 1050px;
   margin: auto;
 }
-
-.coups-de-coeur .span.slick-legend {
-  margin-left:
+.cest-sport span.slick-legend {
+  margin-left: -60px;
+}
+.coups-de-coeur span.slick-legend {
+  margin-left: -100px;
+}
+.vestiaire-des-news span.slick-legend {
+  margin-left: -100px;
+}
+.nutrition-sante span.slick-legend {
+  margin-left: -80px;
 }
 
 /* Footer */
@@ -1778,7 +1803,9 @@ ul.slick-dots li button:hover{
 
 /* lire la suite */
 
-.warped {position: relative; display: block; width:184px; height:94px; margin: auto;}
+.warped {position: relative; display: block; width:184px; height:94px; margin: auto;
+  background: url('img/ellispis-icon.png') no-repeat center bottom;
+}
 
 .warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
   -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
@@ -2020,6 +2047,11 @@ a.full img {
   box-sizing: border-box;
   vertical-align: middle;
 }
+.chat .cff-text {
+  max-height: 86px;
+  display: block;
+  overflow: hidden;
+}
 .chat .cff-wrapper #cff .cff-item {
   display: inline-block;
 }
@@ -2075,9 +2107,15 @@ blockquote {
   color: #444;
   font-size: 1.5em;
   font-family: 'Merriweather', serif;
-  border-left: 4px solid #d60180;
   padding-right: 50px;
+  border-left: 0;
+  padding-top: 20px;
+  padding-left: 40px;
   box-sizing: border-box;
+  background: url('img/tild-icon.png') no-repeat left top transparent;
+}
+blockquote p:after {
+  content: '"';
 }
 
 .comments-area {

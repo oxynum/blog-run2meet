@@ -140,7 +140,7 @@ get_header(); ?>
 
 					if(get_post_format() == 'chat') {
 						echo '<div class="col-2x1 col-r2m chat-module '.  $category[0]->slug .' '. get_post_format() .'"><div class="relative">';
-						echo '<h2>- Run2meet</h2>';
+						echo '<h2><span class="facebook-icon-chat"></span> - Run2meet</h2>';
 							the_content();
 							echo '<div class="fb-like" data-href="https://www.facebook.com/run2meetfrance?_rdr" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>';
 							echo '</div></div>';
@@ -158,9 +158,7 @@ get_header(); ?>
 								</a>
 								</div>
 								<div class="text-area">
-									<span class="view-count">';
-									the_views();
-							echo '</span>
+									<span class="view-count">'.get_the_date() .'</span>
 									<h2><a href="'. esc_url( get_permalink() ) .'">';
 										the_title();
 							echo '</a></h2>
@@ -180,9 +178,7 @@ get_header(); ?>
 							</a>
 							</div>
 							<div class="text-area">
-								<span class="view-count">';
-								the_views();
-						echo '</span>
+								<span class="view-count">'.get_the_date() .'</span>
 								<h2><a href="'. esc_url( get_permalink() ) .'">'. get_the_title() .'</a></h2>
 								<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 							</div>
@@ -206,9 +202,7 @@ get_header(); ?>
 					if ($news_active !== true) {
 						echo '<div class="col-2x1-reverse col-r2m '.  $category[0]->slug .' '. get_post_format() .' '. $taglist .'">
 							<div class="text-area">
-								<span class="view-count">';
-								the_views();
-						echo '</span>
+								<span class="view-count">'.get_the_date() .'</span>
 								<h2><a href="'. esc_url( get_permalink() ) .'">' . get_the_title();
 						echo '</a></h2>
 								<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
@@ -242,8 +236,7 @@ get_header(); ?>
                             <span class="image-area-link">Lire la suite</span>
 						</a>
 						<div class="text-area">
-							<span class="view-count">';
-							the_views();
+							<span class="view-count">'.get_the_date();
 					echo '</span>
 							<h2><a href="'. esc_url( get_permalink() ) .'">';
 								the_title();
@@ -258,6 +251,7 @@ get_header(); ?>
 					<div class="col-3x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
 					<div class="relative">
 						<div class="text-area">
+						<span class="slick-icon-legend"></span>
 						<div class="slick-rotate-legend">
                 <span class="slick-legend">' . get_the_category_list() . '</span>
               </div>
@@ -279,6 +273,7 @@ get_header(); ?>
 					echo '<div class="col-5x2 col-r2m '.  $category[0]->slug .' '. get_post_format() .'">
 					<div class="relative">
 						<div class="text-area">
+						<span class="slick-icon-legend"></span>
 						<div class="slick-rotate-legend">
                 <span class="slick-legend">' . get_the_category_list() . '</span>
               </div>
@@ -301,6 +296,7 @@ get_header(); ?>
 						</a>
 						</div>
 						<div class="text-area">
+							<span class="view-count">'.get_the_date() .'</span>
 							<h2><a href="'. esc_url( get_permalink() ) .'">'. get_the_title() .'</a></h2>
 							<span class="categorie-list"><span class="sep-x"></span>' . get_the_category_list() . '</span>
 						</div>
