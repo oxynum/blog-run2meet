@@ -2252,7 +2252,7 @@ and (max-width : 667px) {
     padding: 20px;
   }
 
-  .home .site {
+  .home .site, .single .site {
     overflow: hidden;
   }
 
