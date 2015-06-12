@@ -66,7 +66,7 @@
                     </a>
 				  </ul>
 				<div class="connexion">
-					<a class="submit" href="https://www.run2meet.fr">Aller sur <strong>Run2meet.fr</strong></a>
+					<a class="submit" href="https://www.run2meet.fr/?utm_source=run2meet%20blog&utm_medium=traking%20blog%20R2M&utm_term=blog%20run2meet&utm_campaign=blog%20run2meet%20traffic">Aller sur <strong>Run2meet.fr</strong></a>
 				</div>
 			</div><!-- .site-branding -->
 			<nav class="nav-main">
