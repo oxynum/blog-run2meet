@@ -1885,7 +1885,7 @@ ul.slick-dots li button:hover{
   transition: height .3s;
 }
 
-.type-post .entry-header h1{
+.type-post .entry-header h1, .entry-content h1{
   font-size: 4em;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -1996,6 +1996,7 @@ ul.slick-dots li button:hover{
 img.full {
   width: 100%;
   display: block;
+  margin: 20px auto;
 }
 a.full img {
   width: 100%;
