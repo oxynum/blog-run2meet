@@ -1937,6 +1937,7 @@ ul.slick-dots li button:hover{
 .site .entry-content h3, .site .entry-content h2 {
   color: #d60180;
   text-transform: uppercase;
+  margin: 20px 0;
 }
 
 
