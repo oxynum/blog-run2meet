@@ -795,7 +795,8 @@ a:focus {
 ul.social-icon{
   float: left;
   position: absolute;
-  padding: 15px 0 0 195px;
+  top: 15px;
+  left: 195px;
 }
 
 ul.social-icon a{
